@@ -28,73 +28,73 @@
 
       <div class="row">
         <div class="col-4">
-          <img src="images/test.jpg">
+          <img src="images/test.png">
           <h4>Red Printed T-Shirt</h4>
           <p>$50.00</p>
           <button class="btn">Hinzufügen</button>
         </div>
         <div class="col-4">
-          <img src="images/test.jpg">
+          <img src="images/test.png">
           <h4>Red Printed T-Shirt</h4>
           <p>$50.00</p>
           <button class="btn">Hinzufügen</button>
         </div>
         <div class="col-4">
-          <img src="images/test.jpg">
+          <img src="images/test.png">
           <h4>Red Printed T-Shirt</h4>
           <p>$50.00</p>
           <button class="btn">Hinzufügen</button>
         </div>
         <div class="col-4">
-          <img src="images/test.jpg">
+          <img src="images/test.png">
           <h4>Red Printed T-Shirt</h4>
           <p>$50.00</p>
           <button class="btn">Hinzufügen</button>
         </div>
         <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>
           </div>
           <div class="col-4">
-            <img src="images/test.jpg">
+            <img src="images/test.png">
             <h4>Red Printed T-Shirt</h4>
             <p>$50.00</p>
             <button class="btn">Hinzufügen</button>

@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="images/test.jpg" alt="test" width="100%">
+                    <img src="images/test.png" alt="test" width="100%">
                 </div>
                 <div class="col-2">
                     <div class="form-container">
