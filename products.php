@@ -18,87 +18,105 @@
     </div>
 
     <div class="small-container">
-        <div class="row row-2">
-            <h2>Alle Produkte</h2>
-            <select>
-                <option>Normale Sortierung</option>
-                <option>Sortiert nach Preis</option>
-            </select>
-        </div>
-
+    <h2>Alle Produkte</h2>
+            
       <div class="row">
         <div class="col-4">
-          <img src="images/test.png">
-          <h4>Red Printed T-Shirt</h4>
-          <p>$50.00</p>
-          <button class="btn">Hinzufügen</button>
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-a.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-a.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
         </div>
         <div class="col-4">
-          <img src="images/test.png">
-          <h4>Red Printed T-Shirt</h4>
-          <p>$50.00</p>
-          <button class="btn">Hinzufügen</button>
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-b.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-b.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
         </div>
         <div class="col-4">
-          <img src="images/test.png">
-          <h4>Red Printed T-Shirt</h4>
-          <p>$50.00</p>
-          <button class="btn">Hinzufügen</button>
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-c.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-c.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
         </div>
         <div class="col-4">
-          <img src="images/test.png">
-          <h4>Red Printed T-Shirt</h4>
-          <p>$50.00</p>
-          <button class="btn">Hinzufügen</button>
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-d.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-d.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
         </div>
         <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
-          <div class="col-4">
-            <img src="images/test.png">
-            <h4>Red Printed T-Shirt</h4>
-            <p>$50.00</p>
-            <button class="btn">Hinzufügen</button>
-          </div>
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-e.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-e.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-unknown.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-unknown.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-a.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-unknown.svg" class="score"alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-unknown.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-a.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-a.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-a.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-a.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-a.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-a.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-a.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
+        <div class="col-4">
+          <img src="images/test.png" alt="product">
+          <h4>Heinz Ketchup</h4>
+          <p>2,75€</p>
+          <img src="images/scores/nutriscore-a.svg" class="score" alt="nutri-score"><br>
+          <img src="images/scores/ecoscore-a.svg" class="score" alt="eco-score">
+          <button class="btn add">Hinzufügen</button>
+        </div>
       </div>
 
       <div class="page-btn">
