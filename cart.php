@@ -28,7 +28,7 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="images/test.png">
+                        <img src="images/test.png" alt="product">
                         <div>
                             <p>Dole Banane</p>
                             <small>Preis: 0,30€</small>
@@ -43,7 +43,7 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="images/test.png">
+                        <img src="images/test.png" alt="product">
                         <div>
                             <p>Heinz Ketchup</p>
                             <small>Preis: 2,75€</small>
@@ -58,7 +58,7 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="images/test.png">
+                        <img src="images/test.png" alt="product">
                         <div>
                             <p>Meica Würstchen</p>
                             <small>Preis: 3,98€</small>

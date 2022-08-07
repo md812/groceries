@@ -85,11 +85,19 @@ p {
 .btn {
     display: inline-block;
     background: #19ab60;
-    color: white;
+    color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
+}
+
+.btn .add {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .btn:hover {
@@ -139,6 +147,13 @@ p {
     width: 100%;
 }
 
+.col-4 .score {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .title {
     text-align: center;
     margin: 0 auto 80px;
@@ -183,7 +198,7 @@ h4 {
 }
 
 .footer p {
-    color: #000;
+    color: #fff;;
 }
 
 .footer h3 {
@@ -197,14 +212,18 @@ ul {
 
 .footer hr {
     border: none;
-    background: #000;
+    background: #fff;
     height: 1px;
     margin: 20px 0;
 }
 
+#FooterItems {
+    color: #fff;
+}
+
 .copyright {
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .menu-icon {
