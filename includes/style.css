@@ -38,18 +38,20 @@ nav ul li {
     margin-right: 20px;
 }
 
-a {
+nav ul li a {
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+
+.logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
 }
 
 a:hover {
     color: #19ab60 !important;
-}
-
-p {
-    color: black;
 }
 
 .container {
@@ -80,6 +82,12 @@ p {
     font-size: 50px;
     line-height: 60px;
     margin:25px 0;
+}
+
+.col-2 .btn {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn {
@@ -217,7 +225,9 @@ ul {
     margin: 20px 0;
 }
 
-#FooterItems {
+.footer li a {
+    font-weight: bold;
+    text-decoration: none;
     color: #fff;
 }
 
@@ -385,14 +395,6 @@ form .btn {
 
 form .btn:focus {
     outline: none;
-}
-
-#LoginForm {
-    left: -300px;
-}
-
-#RegForm {
-    left: 0;
 }
 
 form a {

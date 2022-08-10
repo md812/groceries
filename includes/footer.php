@@ -1,9 +1,9 @@
 <div class="container">
     
-        <ul id="FooterItems">
+        <ul class="footer">
             <li><a href="impressum.php">Impressum</a></li>
-            <li><a href="dataprotection.php">Datenschutzerklärung</a></li>
-            <li><a href="tou.php">Nutzungsbedingungen</a></li>
+            <li><a href="datenschutz.php">Datenschutzerklärung</a></li>
+            <li><a href="nutzungsbedingungen.php">Nutzungsbedingungen</a></li>
         </ul>
     
     <hr>
