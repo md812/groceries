@@ -23,14 +23,14 @@
             <tr>
                 <th>Produkt</th>
                 <th>Anzahl</th>
-                <th>Subtotal</th>
+                <th>Preis</th>
             </tr>
             <tr>
                 <td>
                     <div class="cart-info">
                         <img src="images/test.png" alt="product">
                         <div>
-                            <p>Dole Banane</p>
+                            <p>Popcorn</p>
                             <small>Preis: 0,30€</small>
                             <br>
                             <a href="">Entfernen</a>
@@ -45,7 +45,7 @@
                     <div class="cart-info">
                         <img src="images/test.png" alt="product">
                         <div>
-                            <p>Heinz Ketchup</p>
+                            <p>Cerealien</p>
                             <small>Preis: 2,75€</small>
                             <br>
                             <a href="">Entfernen</a>
@@ -60,7 +60,7 @@
                     <div class="cart-info">
                         <img src="images/test.png" alt="product">
                         <div>
-                            <p>Meica Würstchen</p>
+                            <p>Nüsse</p>
                             <small>Preis: 3,98€</small>
                             <br>
                             <a href="">Entfernen</a>
@@ -70,21 +70,28 @@
                 <td><input type="number" value="1"></td>
                 <td>3,98€</td>
             </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/test.png" alt="product">
+                        <div>
+                            <p>Erdnussbutter</p>
+                            <small>Preis: 1,24€</small>
+                            <br>
+                            <a href="">Entfernen</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>1,24€</td>
+            </tr>
         </table>
 
         <div class="total-price">
             <table>
                 <tr>
-                    <td>Subtotal</td>
-                    <td>7,03€</td>
-                </tr>
-                <tr>
-                    <td>Steuern</td>
-                    <td>0,30€</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>7,33€</td>
+                    <td>Einkaufspreis</td>
+                    <td>8,27€</td>
                 </tr>
             </table>
         </div>

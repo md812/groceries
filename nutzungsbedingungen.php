@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="includes/style.css">
-    <title>Groceries | Impressum</title>
+    <title>Groceries | Nutzungsbedingungen</title>
   </head>
 
   <body>
@@ -19,10 +19,10 @@
         </div>
 
         <div class="privacy">
-            <h1>Datenschutzerklärung</h1>
+            <h1>Nutzungsbedingungen</h1>
             Bla bla bla...
             <br>
-            <p id="source">Quelle: Diese Datenschutzerklärung wurde freundlicherweise vom <ahref="https://datenschutz-generator.de/">Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a> zur Verfügung gestellt.</p><br>
+            <p id="source">Quelle: Diese Nutzungsbedingungen wurden freundlicherweise von <a href="http://www.jurarat.de/muster-nutzungsbedingungen">www.jurarat.de</a> zur Verfügung gestellt und in angepasster Form auf dieser Webseite verwendet.</p><br>
         </div>
     </div>
 
