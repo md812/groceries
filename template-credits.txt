@@ -1,4 +1,4 @@
-The whole web presence of Groceries is based on the template series presented by "Easy Tutorials" on YouTube.
+The whole web presence of Groceries is based on the template series presented by "Easy Tutorials" on YouTube. The authors were asked for usage of this template in this thesis and gave their permission.
 The template was modified for the use in this thesis.
 
 Link to the initial template video: https://www.youtube.com/watch?v=yQimoqo0-7g
