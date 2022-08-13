@@ -98,6 +98,7 @@ a:hover {
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
+    border: none;
 }
 
 .btn .add {
@@ -110,6 +111,7 @@ a:hover {
 
 .btn:hover {
     background: #563434;
+    cursor: pointer;
 }
 
 .header .row {
@@ -378,28 +380,19 @@ th:last-child {
     transition: transform 1s;
 }
 
-form input {
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
+form p input {
+    margin-left: 10px;
 }
 
-form .btn {
-    width: 100%;
+form p .btn {
+    margin-left: 10px;
     border: none;
-    cursor: pointer;
-    margin: 10px 0;
 }
 
-form .btn:focus {
+form p .btn:focus {
     outline: none;
 }
 
-form a {
-    font-size: 12px;
-}
 
 #Indicator {
     width: 100px;
@@ -425,6 +418,14 @@ form a {
 
 h1 {
     text-align: center;
+}
+
+.uol-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 50px;
 }
 
 

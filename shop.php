@@ -14,7 +14,8 @@
 
         <div class="row">
             <div class="col-2">
-                <h1>Online-Shop</h1>
+                <h1>Kaufe online<br> deine Lebensmittel.</h1><br>
+                <p>Herzlich willkommen bei Groceries! Schauen Sie in unserem Online-Shop vorbei, vergleichen Sie Ihre Auswahl und entdecken Sie Produkte aus aller Welt!</p><br>
                 <p>Hier können Sie Ihre Auswahl der Produktkategorie treffen.</p>
                 <a href="cerealien.php" class="btn">Cerealien-Produkte &#8594;</a>
                 <a href="erdnussbutter.php" class="btn">Erdnussbutter-Produkte &#8594;</a>

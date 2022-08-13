@@ -8,29 +8,31 @@
 
   <body>
 
-    <div class="header">
-      <div class="container">
-        <?php include "includes/nav.php" ?>
-      </div>
-
-        <div class="row">
-          <div class="col-2">
-            <h1>Kaufe online<br> deine Lebensmittel.</h1>
-            <p>Herzlich willkommen bei Groceries! Schauen Sie in unserem Online-Shop vorbei, vergleichen Sie Ihre Auswahl und entdecken Sie Produkte aus aller Welt!</p>
-            <a href="shop.php" class="btn">Zum Online-Shop &#8594;</a>
-          </div>
-          <!-- image source: https://uol.de/corporate-design/uni-logo -->
-          <div class="col-2">
-            <img src="images/uol_logo.jpg" alt="uni-oldenburg-logo" width="50%">
-          </div>
-        </div>
-      </div>
+    <div class="container">
+      <?php include "includes/nav.php" ?>
     </div>
 
-      <!-- footer -->
-      <div class="footer">
+    <h1>Nutzerstudie</h1>
+
+    <!-- image source: https://uol.de/corporate-design/uni-logo -->
+    <div>
+      <img src="images/uol_logo.jpg" alt="uni-oldenburg-logo" class="uol-logo">
+    </div>
+
+    <div>
+      <p>Herzlich willkommen bei unserer Nutzerstudie! Wir freuen uns über Ihre Teilnahme. Zu Beginn dieser Studie geben wir Ihnen auf dieser Seite einige Informationen über den Ablauf. Gleichzeitig benötigen wir Ihre Zustimmung zur Teilnahme an dieser Studie.</p><br>
+
+      <form action="shop.php">
+        <p><input type="checkbox" required>Ich habe keine Nussallergien.</p>
+        <p><input type="checkbox" required>Ich bin mit der Durchführung der Nutzerstudie einverstanden.</p>
+        <p><input href="shop.php" type="submit" class="btn" value="Zum Online-Shop &#8594;"></p>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
       <?php include "includes/footer.php" ?>
-      </div>
+    </div>
 
     <script>
       <?php include "includes/scripts.js" ?>
