@@ -6,7 +6,7 @@
   <nav>
     <ul id="MenuItems">
       <li><a href="index.php">Start</a></li>
-      <li><a href="produkte.php">Online-Shop</a></li>
+      <li><a href="shop.php">Online-Shop</a></li>
     </ul>
   </nav>
   <a href="warenkorb.php">&#x1f6d2;</a>

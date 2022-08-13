@@ -17,7 +17,7 @@
           <div class="col-2">
             <h1>Kaufe online<br> deine Lebensmittel.</h1>
             <p>Herzlich willkommen bei Groceries! Schauen Sie in unserem Online-Shop vorbei, vergleichen Sie Ihre Auswahl und entdecken Sie Produkte aus aller Welt!</p>
-            <a href="produkte.php" class="btn">Zum Online-Shop &#8594;</a>
+            <a href="shop.php" class="btn">Zum Online-Shop &#8594;</a>
           </div>
           <!-- image source: https://uol.de/corporate-design/uni-logo -->
           <div class="col-2">
