@@ -7,5 +7,5 @@
         </ul>
     
     <hr>
-    <p class="copyright">Copyright 2022 - Marco Druschba</p>
+    <p class="copyright">&#xA9; 2022 Groceries - Marco Druschba</p>
 </div>

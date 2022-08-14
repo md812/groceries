@@ -9,6 +9,6 @@
       <li><a href="shop.php">Online-Shop</a></li>
     </ul>
   </nav>
-  <a href="warenkorb.php">&#x1f6d2;</a>
+  <a href="warenkorb.php" id="warenkorb">&#x1f6d2;</a>
   <a class="menu-icon" onclick="menutoggle()">&#9776;</a>
 </div>    
