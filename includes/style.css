@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 a:hover {
-    color: #19ab60 !important;
+    color: #058b49 !important;
 }
 
 .container {
@@ -92,7 +92,7 @@ a:hover {
 
 .btn {
     display: inline-block;
-    background: #19ab60;
+    background: #058b49;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -107,6 +107,12 @@ a:hover {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -145,12 +151,18 @@ a:hover {
     padding-right: 25px;
 }
 
+.small-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .col-4 {
     flex-basis: 25%;
     padding: 10px;
-    min-width: 200px;
+    max-width: 300px;
     margin-bottom: 20px;
     transition: transform 0.5s;
+    text-align: center;
 }
 
 .col-4 img {
@@ -161,7 +173,12 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 50%;
+}
+.col-4 h4 {
+    margin-bottom: 10px;
 }
 
 .title {
@@ -174,7 +191,7 @@ a:hover {
 
 .title::after {
     content: '';
-    background: #19ab60;
+    background: #058b49;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -185,12 +202,15 @@ a:hover {
 }
 
 h4 {
-    color: #555;
+    color: #000;
     font-weight: normal;
+    font-size: 20px;
 }
 
 .col-4 p {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
 }
 
 .col-4:hover {
@@ -203,7 +223,7 @@ h4 {
     color: #8a8a8a;
     font-size: 14px;
     padding: 20px 0 20px;
-    background: #19ab60;
+    background: #058b49;
     text-align: center;
 }
 
@@ -251,7 +271,7 @@ ul {
 }
 
 select {
-    border: 1px solid #19ab60;
+    border: 1px solid #058b49;
     padding: 5px;
 }
 
@@ -265,7 +285,7 @@ select:focus {
 
 .page-btn span {
     display: inline-block;
-    border: 1px solid #19ab60;
+    border: 1px solid #058b49;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -275,7 +295,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-    background: #19ab60;
+    background: #058b49;
     color: #fff;
 }
 
@@ -293,7 +313,7 @@ th {
     text-align: left;
     padding: 5px;
     color: #fff;
-    background: #19ab60;
+    background: #058b49;
     font-weight: normal;
 }
 
@@ -308,7 +328,7 @@ td input {
 }
 
 td a {
-    color: #19ab60;
+    color: #058b49;
     font-size: 12px;
 }
 
@@ -329,7 +349,7 @@ td img {
 }
 
 .total-price table {
-    border-top: 3px solid #19ab60;
+    border-top: 3px solid #058b49;
     width: 100%;
     max-width: 400px;
 }
@@ -397,7 +417,7 @@ form p .btn:focus {
 #Indicator {
     width: 100px;
     border: none;
-    background: #19ab60;
+    background: #058b49;
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
