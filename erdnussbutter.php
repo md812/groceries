@@ -12,7 +12,7 @@
       $db = new PDO('sqlite:db/produkte.db');
 
       // Select 12 random entries of DB
-      $sql = 'SELECT DISTINCT * FROM erdnussbutter WHERE price IS NOT NULL ORDER BY RANDOM() LIMIT 12';
+      $sql = 'SELECT DISTINCT * FROM erdnussbutter ORDER BY RANDOM() LIMIT 12';
       $result = $db->prepare($sql);
       $result->execute();
 

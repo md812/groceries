@@ -1,4 +1,4 @@
-All sources for erdnussbutter products adapted from:
+All image sources for erdnussbutter products adapted from:
 
 # 01.jpg - https://filiale.kaufland.de/sortiment/das-sortiment/detail.erdnussbutter-crunchy-350g.article_id=01287690.html?utm_source=mpn
 # 02.jpg - https://www.nu3.de/products/nu3-erdnussbutter
@@ -24,3 +24,15 @@ All sources for erdnussbutter products adapted from:
 # 22.jpg - https://www.nu3.de/products/nu3-erdnussbutter
 # 23.jpg - https://unverpackt-fuer-alle.de/produkt/erdnussmus/
 # 24.jpg - https://es.foodfactor.net/produits/5712872952664/bellafonde+peanut+butter+smooth.php?code=5712872952664&lib_prod=bellafonde+peanut+butter+smooth
+# 25.jpg - https://www.ecoget.de/Eisbluemerl-Erdnussmus-250-g
+# 26.jpg - https://www.rossmann.de/de/lebensmittel-enerbio-erdnussmus/p/4305615678153
+# 27.jpg - https://www.rossmann.de/de/lebensmittel-whole-earth-bio-creamy-peanut-butter/p/5013665115656
+# 28.jpg - https://www.dennree.de/dennree-produkte/uebersicht/nussmuse/erdnussmus-fein
+# 29.jpg - https://der-vegane-laden.de/Natuerliche-Erdnussbutter-1000g
+# 30.jpg - https://www.terrasana.com/product/peanut-butter-crunchy-250-g/
+# 31.jpg - https://sortiment.lidl.ch/de/erdnussbutter-0021805.html
+# 32.jpg - https://www.aldi-sued.de/de/p.zentis-erdnussbutter--g.490000000000704359.html
+# 33.jpg - https://www.body-attack.de/body-attack-peanut-butter-1000.html
+# 34.jpg - https://got7.de/products/got7-peanut-butter-500-g
+# 35.jpg - https://shop.allos.de/allos-peanut-butter-creamy-227g
+# 36.jpg - https://de.openfoodfacts.org/produkt/4063367154584/k-take-it-veggie-erdnussmus
