@@ -3,7 +3,7 @@
 <html lang="de">
   <head>
     <?php include "includes/meta.php" ?>
-    <title>Groceries | Erdnussbutter-Produkte</title>
+    <title>Groceries | Erdnussbutter & -mus</title>
   </head>
 
   <?php
@@ -61,7 +61,7 @@
         print "<img src='images/scores/nutriscore-d.svg' class='score' alt='nutri-score-d'>";
       } else if ($rows[$nutri]['nutriscore_grade'] == 'e') {
         print "<img src='images/scores/nutriscore-e.svg' class='score' alt='nutri-score-e'>";
-      } else if ($rows[$nutri]['nutriscore_grade'] == NULL || $rows[$nutri]['nutriscore_grade'] == "unknown") {
+      } else if ($rows[$nutri]['nutriscore_grade'] == NULL) {
         print "<img src='images/scores/nutriscore-unknown.svg' class='score' alt='nutri-score-unknown'>";
       }
     }
@@ -79,7 +79,7 @@
         print "<img src='images/scores/ecoscore-d.svg' class='score' alt='eco-score-d'>";
       } else if ($rows[$eco]['ecoscore_grade'] == 'e') {
         print "<img src='images/scores/ecoscore-e.svg' class='score' alt='eco-score-e'>";
-      } else if ($rows[$eco]['ecoscore_grade'] == NULL || $rows[$eco]['ecoscore_grade'] == "unknown") {
+      } else if ($rows[$eco]['ecoscore_grade'] == NULL) {
         print "<img src='images/scores/ecoscore-unknown.svg' class='score' alt='eco-score-unknown'>";
       }
     }
@@ -93,7 +93,7 @@
 
     <!-- display 12 random products -->
     <div class="small-container">
-      <h1>Erdnussbutter-Produkte:</h1>
+      <h1>Erdnussbutter & -mus</h1>
       <div class="row">
         <div class="col-4">
         <img src="<?php echo "{$rows[0]['picture_path']}";?>" alt="product-1">
