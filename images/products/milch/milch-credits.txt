@@ -1,38 +1,38 @@
 All image sources for milch products adapted from:
 
-# 01.jpg - 
-# 02.jpg - 
-# 03.jpg - 
-# 04.jpg - 
-# 05.jpg - 
-# 06.jpg - 
-# 07.jpg - 
-# 08.jpg - 
-# 09.jpg - 
-# 10.jpg - 
-# 11.jpg - 
-# 12.jpg - 
-# 13.jpg - 
-# 14.jpg - 
-# 15.jpg - 
-# 16.jpg - 
-# 17.jpg - 
-# 18.jpg - 
-# 19.jpg - 
-# 20.jpg - 
-# 21.jpg - 
-# 22.jpg - 
-# 23.jpg - 
-# 24.jpg - 
-# 25.jpg - 
-# 26.jpg - 
-# 27.jpg - 
-# 28.jpg - 
-# 29.jpg - 
-# 30.jpg - 
-# 31.jpg - 
-# 32.jpg - 
-# 33.jpg - 
-# 34.jpg - 
-# 35.jpg - 
-# 36.jpg - 
+# 01.jpg - https://shop.rewe.de/p/alpro-mandel-drink-original-vegan-1l/1306213
+# 02.jpg - https://shop.rewe.de/p/alpro-soja-drink-original-mit-calcium-vegan-1l/2372445?groupId=alpro_drink_orginal_1l
+# 03.jpg - https://shop.rewe.de/p/alpro-hafer-drink-original-vegan-1l/2317861?groupId=alpro_drink_orginal_1l
+# 04.jpg - https://shop.rewe.de/p/alpro-hafer-drink-barista-1l/8358463
+# 05.jpg - https://www.lidl.at/p/vegane-koestlichkeiten/bio-mandel-drink/p62358
+# 06.jpg - https://www.supermarkt24h.de/getraenke/haltbare-milch/h-vollmilch/gut-guenstig-h-milch-1-5a-1349501854/
+# 07.jpg - https://www.supermarkt24h.de/gut-gaeuenstig-h-milch-3-5a-1349501852/
+# 08.jpg - https://shop.rewe.de/p/baerenmarke-die-alpenfrische-vollmilch-1l/1252410?source=mc
+# 09.jpg - https://filiale.kaufland.de/sortiment/eigenmarken/k-take-it-veggie/k-take-it-veggie-sortiment/detail.haferdrink-1-0l.article_id=01262848.html
+# 10.jpg - https://www.aldi-nord.de/sortiment/kuehlung-tiefkuehlung/kaese-milch-milchprodukte/milch-milchersatz/bio-vollmilch-0789-0-0.article.html
+# 11.jpg - https://www.meinmarktstand.de/nordwest/sortiment/kaese-milch-eier-nudeln/milch/2565/ammerlaender-bio-h-milch-3-8
+# 12.jpg - https://bergbauernmilch.de/de/unsere-produkte/privatverbraucher/milch/frischmilch-laenger-haltbar/frische-bergbauern-milch-laenger-haltbar/1-liter-tetra-edge-3-5-fett.html
+# 13.jpg - https://shop.rewe.de/p/landliebe-frische-landmilch-3-8-1l/4561040
+# 14.jpg - https://shop.rewe.de/p/weihenstephan-h-milch-3-5-1l/677067
+# 15.jpg - https://www.mynetfair.com/de/showroom/8001/products/category/2050131703/h-milch-3,5-1-liter,milbona-lidl,,11608941/?1=1
+# 16.jpg - https://shop.rewe.de/p/rewe-bio-frische-fettarme-1-5-milch-1l/197862
+# 17.jpg - https://shop.rewe.de/p/rewe-bio-fettarme-h-milch-1-5-1l/197877
+# 18.jpg - https://www.mynetfair.com/de/mnf/2050131702/h-milch-1,5--1-liter,-20757595,milbona-lidl,11616006/?1=1
+# 19.jpg - https://www.combi.de/schwarzwaldmilch_bio_frische_vollmilch_3-8_prozent_4503062147.html
+# 20.jpg - https://shop.rewe.de/p/landliebe-fettarme-landmilch-1-5-1l/6920632
+# 21.jpg - https://www.bringmeister.de/p/demeter-fuer-edeka-demeter-unsere-bio-vollmilch-38-prozent-44323200061
+# 22.jpg - https://olivenoel.de/sternenfair-Weidemilch-fettarme-H-Milch-18-Fett-1-Liter
+# 23.jpg - https://shop.rewe.de/p/rewe-bio-h-vollmilch-3-8-1l/197889
+# 24.jpg - https://www.molkerei-weihenstephan.de/produkte/milch/frische-milch/frische-milch-15-fett
+# 25.jpg - https://shop.rewe.de/p/weihenstephan-barista-milch-1l/8470652
+# 26.jpg - https://shop.rewe.de/p/ja-h-milch-3-5-1l/3072549
+# 27.jpg - https://www.aldi-now.ch/de/nature-active-bio-mandeldrink-ungesusst-1-liter/8881157898241
+# 28.jpg - https://shop.rewe.de/p/hamfelder-hof-bio-vollmilch-laenger-haltbar-3-8-1l/8247919?source=mc
+# 29.jpg - https://shop.rewe.de/p/hamfelder-hof-bio-fettarme-milch-1-5-1l/8247960
+# 30.jpg - https://www.norma-online.de/de/sortiment/ohne-gentechnik-t-189/haltbare-fettarme-milch-i-9158/
+# 31.jpg - https://de.openfoodfacts.org/produkt/4337185446368/haltbare-fettarme-milch-k-classic
+# 32.jpg - https://app.abillion.com/products/vemondo-bio-soja-10291010
+# 33.jpg - https://www.dm.de/dmbio-pflanzendrink-soja-drink-natur-p4058172756078.html
+# 34.jpg - https://shop.rewe.de/p/baerenmarke-barista-milch-1l/7911685
+# 35.jpg - https://merkandi.de/archive/happea-barista-milchalternative/466833
+# 36.jpg - https://www.amazon.de/Joya-Mandel-Barista-Drink-10er/dp/B07T5ML2HD?ref_=ast_sto_dp
