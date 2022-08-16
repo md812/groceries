@@ -3,7 +3,7 @@
 <html lang="de">
   <head>
     <?php include "includes/meta.php" ?>
-    <title>Groceries | Nüsse</title>
+    <title>Groceries | Milch</title>
   </head>
 
   <?php
@@ -12,7 +12,7 @@
       $db = new PDO('sqlite:db/produkte.db');
 
       // Select 12 random entries of DB
-      $sql = 'SELECT DISTINCT * FROM nuesse ORDER BY RANDOM() LIMIT 12';
+      $sql = 'SELECT DISTINCT * FROM popcorn ORDER BY RANDOM() LIMIT 12';
       $result = $db->prepare($sql);
       $result->execute();
 
@@ -93,7 +93,7 @@
 
     <!-- display 12 random products -->
     <div class="small-container">
-      <h1>Nüsse</h1>
+      <h1>Milch</h1>
       <div class="row">
         <div class="col-4">
         <img src="<?php echo "{$rows[0]['picture_path']}";?>" alt="product-1">

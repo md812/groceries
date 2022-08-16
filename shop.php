@@ -19,8 +19,7 @@
                 <p>Hier können Sie Ihre Auswahl der Produktkategorie treffen.</p>
                 <a href="cerealien.php" class="btn">Cerealien &#8594;</a>
                 <a href="erdnussbutter.php" class="btn">Erdnussbutter & -mus &#8594;</a>
-                <a href="nuesse.php" class="btn">Nüsse &#8594;</a>
-                <a href="popcorn.php" class="btn">Popcorn &#8594;</a>
+                <a href="milch.php" class="btn">Milch &#8594;</a>
             </div>
         </div>
 
