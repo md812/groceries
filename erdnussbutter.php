@@ -23,7 +23,7 @@
       $db = new PDO('sqlite:db/produkte.db');
 
       // Select 12 random entries of DB, depending on current condition $condition
-      $sql = "SELECT DISTINCT * FROM erdnussbutter WHERE condition = '$condition' ORDER BY RANDOM() LIMIT 12";
+      $sql = "SELECT DISTINCT * FROM erdnussbutter WHERE condition = '$condition' LIMIT 12";
       $result = $db->prepare($sql);
       $result->execute();
 
@@ -33,7 +33,8 @@
       // dummy table for test usage of 12 random products
       print "<br><h1>DUMMY-TABELLE:</h1><br><br>";
       print "<table border=1>";
-      print "<tr><th>"."product_name_de"."</th>";
+      print "<tr><th>"."brand"."</th>";
+      print "<th>"."product_name_de"."</th>";
       print "<th>"."nutriscore_grade"."</th>";
       print "<th>"."nutriscore_score"."</th>";
       print "<th>"."ecoscore_grade"."</th>";
@@ -45,7 +46,8 @@
       print "<th>"."condition"."</th></tr>";
 
       foreach($rows as $dummy) { 
-        print "<tr><td>".$dummy['product_name_de']."</td>";
+        print "<tr><td>".$dummy['brand']."</td>";
+        print "<td>".$dummy['product_name_de']."</td>";
         print "<td>".$dummy['nutriscore_grade']."</td>";
         print "<td>".$dummy['nutriscore_score']."</td>";
         print "<td>".$dummy['ecoscore_grade']."</td>";
@@ -77,6 +79,7 @@
       <div class="row">
         <div class="col-4">
         <img src="<?php echo "{$rows[0]['picture_path']}";?>" alt="product-1">
+          <h4><?php echo "{$rows[0]['brand']}";?></h4>
           <h4><?php echo "{$rows[0]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[0]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(0); ?>
@@ -84,6 +87,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[1]['picture_path']}";?>" alt="product-2">
+          <h4><?php echo "{$rows[1]['brand']}";?></h4>
           <h4><?php echo "{$rows[1]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[1]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(1); ?>
@@ -91,6 +95,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[2]['picture_path']}";?>" alt="product-3">
+          <h4><?php echo "{$rows[2]['brand']}";?></h4>
           <h4><?php echo "{$rows[2]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[2]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(2); ?>
@@ -98,6 +103,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[3]['picture_path']}";?>" alt="product-4">
+          <h4><?php echo "{$rows[3]['brand']}";?></h4>
           <h4><?php echo "{$rows[3]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[3]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(3); ?>
@@ -105,6 +111,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[4]['picture_path']}";?>" alt="product-5">
+          <h4><?php echo "{$rows[4]['brand']}";?></h4>
           <h4><?php echo "{$rows[4]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[4]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(4); ?>
@@ -112,6 +119,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[5]['picture_path']}";?>" alt="product-6">
+          <h4><?php echo "{$rows[5]['brand']}";?></h4>
           <h4><?php echo "{$rows[5]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[5]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(5); ?>
@@ -119,6 +127,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[6]['picture_path']}";?>" alt="product-7">
+          <h4><?php echo "{$rows[6]['brand']}";?></h4>
           <h4><?php echo "{$rows[6]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[6]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(6); ?>
@@ -126,6 +135,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[7]['picture_path']}";?>" alt="product-8">
+          <h4><?php echo "{$rows[7]['brand']}";?></h4>
           <h4><?php echo "{$rows[7]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[7]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(7); ?>
@@ -133,6 +143,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[8]['picture_path']}";?>" alt="product-9">
+          <h4><?php echo "{$rows[8]['brand']}";?></h4>
           <h4><?php echo "{$rows[8]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[8]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(8); ?>
@@ -140,6 +151,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[9]['picture_path']}";?>" alt="product-10">
+          <h4><?php echo "{$rows[9]['brand']}";?></h4>
           <h4><?php echo "{$rows[9]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[9]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(9); ?>
@@ -147,6 +159,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[10]['picture_path']}";?>" alt="product-11">
+          <h4><?php echo "{$rows[10]['brand']}";?></h4>
           <h4><?php echo "{$rows[10]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[10]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(10); ?>
@@ -154,6 +167,7 @@
         </div>
         <div class="col-4">
           <img src="<?php echo "{$rows[11]['picture_path']}";?>" alt="product-12">
+          <h4><?php echo "{$rows[11]['brand']}";?></h4>
           <h4><?php echo "{$rows[11]['product_name_de']}";?></h4>
           <p><?php echo "{$rows[11]['price']}"."€ pro 500g";?></p>
           <?php showConditionscore(11); ?>

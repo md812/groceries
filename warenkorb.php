@@ -17,13 +17,12 @@
         <table>
             <tr>
                 <th>Produkt</th>
-                <th>Anzahl</th>
                 <th>Preis</th>
             </tr>
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="images/test.png" alt="product">
+                        <img src="images/products/cerealien/01.jpg" alt="product">
                         <div>
                             <p>Cerealien</p>
                             <small>Preis: 2,75€</small>
@@ -32,13 +31,12 @@
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value="1"></td>
                 <td>2,75€</td>
             </tr>
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="images/test.png" alt="product">
+                        <img src="images/products/erdnussbutter/01.jpg" alt="product">
                         <div>
                             <p>Erdnussbutter & -mus</p>
                             <small>Preis: 3,98€</small>
@@ -47,13 +45,12 @@
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value="1"></td>
                 <td>3,98€</td>
             </tr>
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="images/test.png" alt="product">
+                        <img src="images/products/milch/01.jpg" alt="product">
                         <div>
                             <p>Milch</p>
                             <small>Preis: 1,24€</small>
@@ -62,7 +59,6 @@
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value="1"></td>
                 <td>1,24€</td>
             </tr>
         </table>

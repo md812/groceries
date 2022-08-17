@@ -17,10 +17,10 @@
         <h1>Impressum</h1><br>
         <h2>Angaben gemäß § 5 TMG</h2><br>
         <h3>Verantwortlicher</h3>
-        <p>Marco Druschba<br>
+        <p>Marco Druschba<br><br>
+        Carl von Ossietzky Universität Oldenburg<br>
         Ammerländer Heerstraße 114-118<br>
-        26129 Oldenburg<br>
-        Deutschland</p><br>
+        26129 Oldenburg, Deutschland</p><br>
 
         <h3>Kontakt</h3>
         <p>E-Mail: marco.druschba(at)uni-oldenburg.de</p><br>

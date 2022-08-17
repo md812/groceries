@@ -17,7 +17,7 @@
             <h1>Datenschutzerklärung</h1>
             Bla bla bla...
             <br>
-            <p id="source">Quelle: Diese Datenschutzerklärung wurde freundlicherweise vom <ahref="https://datenschutz-generator.de/">Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a> zur Verfügung gestellt.</p><br>
+            <p id="source">Quelle: Diese Datenschutzerklärung wurde freundlicherweise vom <a href="https://datenschutz-generator.de/">Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a> zur Verfügung gestellt.</p><br>
         </div>
     </div>
 

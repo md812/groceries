@@ -162,16 +162,14 @@ button {
 }
 
 .col-4 {
-    flex-basis: 25%;
     padding: 10px;
-    max-width: 300px;
     margin-bottom: 20px;
     transition: transform 0.5s;
     text-align: center;
 }
 
 .col-4 img {
-    width: 100%;
+    height: 100%;
 }
 
 .col-4 .score {
@@ -180,8 +178,9 @@ button {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 50%;
+    max-width: 40%;
 }
+
 .col-4 h4 {
     margin-bottom: 10px;
 }
@@ -228,7 +227,7 @@ h4 {
     color: #8a8a8a;
     font-size: 14px;
     padding: 20px 0 20px;
-    background: #058b49;
+    background: #fff;
     text-align: center;
 }
 
@@ -236,8 +235,12 @@ h4 {
     color: #fff;;
 }
 
+ul li a:hover .footer {
+    color: #000;
+}
+
 .footer h3 {
-    color: #fff;
+    color: #058b49;
     margin-bottom: 10px;
 }
 
@@ -247,20 +250,22 @@ ul {
 
 .footer hr {
     border: none;
-    background: #fff;
-    height: 1px;
+    background: #058b49;
+    height: 2px;
     margin: 20px 0;
 }
 
 .footer li a {
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
-.copyright {
+#copyright {
     text-align: center;
-    color: #fff;
+    font-weight: bold;
+    color: #058b49;
+    margin-top: 20px;
 }
 
 .menu-icon {
