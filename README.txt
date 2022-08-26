@@ -1,6 +1,9 @@
 # XAMPP-KONFIGURATION & INSTALLATION:
 Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP konfigurierten Apache-Servers. An dieser Stelle erfolgt hierzu eine Kurzanleitung:
 
+    # HINWEIS 0:
+    Es wird davon ausgegangen, dass das System auf einem Windows-PC getestet wird.
+
     0. Download von XAMPP über https://www.apachefriends.org/de/index.html.
     1. Abgegebenes "groceries"-Verzeichnis an gewünschter Stelle speichern.
         1.1 Möglichkeit 1: Dateien des "groceries"-Verzeichnisses direkt im "htdocs"-Verzeichnis (z.B. "C:/xampp/htdocs") speichern.
@@ -20,15 +23,31 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
     5. Im Webbrowser http://localhost/index.php eingeben. Die Startseite von Groceries, "index.php" wird aufgerufen. Ab hier kann sich mithilfe der Website durch die einzelnen Seiten navigiert werden oder es erfolgt ein Aufruf einer anderen Seite durch z.B. http://localhost/produkte.php.
 
     # HINWEIS 2:
+    Es kann passieren, dass bei der Darstellung des Online-Shops beim initialen Aufruf das CSS zu fehlen scheint. Hierzu ist der Browser-Cache zu leeren:
+
+    0. Browser öffnen.
+    1. [STRG] + [SHIFT] + [ENTF] drücken.
+    2. Beim "Zeitraum" "Gesamte Zeit" auswählen und das Häkchen bei "Bilder und Dateien im Cache" setzen.
+    3. Unten rechts auf "Daten löschen" klicken.
+    4. "Einstellungen"-Tab schließen und wieder zum Groceries-Tab wechseln.
+    5. Seite neu laden ([F5]).
+
+    # HINWEIS 3:
     Für den erneuten Aufruf der Webpräsenz von Groceries sind nach der initialen Konfiguration nur noch die Schritte 2., 4. und 5. nötig, sofern der Apache-Server nach der letzten Verwendung wieder gestoppt wurde. Ansonsten ist nur Schritt 5. nötig, da der Apache-Server immer noch läuft.
 
--------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # VERZEICHNISSTRUKTUR:
-Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insbesondere ist hier die "index.php"-Datei, welche die Startseite enthält, relevant.
+Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insbesondere ist hier die "index.php"-Datei, welche die Startseite enthält, sowie diese README-Datei, relevant.
 
 Weiterhin gibt es Unterverzeichnisse:
-    - "db" enthält die Datenbank "produkte.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt. Die Datenbank enthält die konkreten Produkte inkl. hinterlegter Scores. Zusätzlich sind im Unterverzeichnis "res" die aus der Open Food Facts-Datenbank (https://de.openfoodfacts.org/) exportierten Ressourcen als .csv-Dateien hinterlegt, aus welchen die "produkte.db"-Datenbank erstellt wurde.
+    - "db" enthält die Datenbank "produkte.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
+	Die Datenbank enthält die konkreten Produkte inkl. hinterlegter Scores. Zusätzlich sind im Unterverzeichnis "res" die aus der Open Food Facts-Datenbank (https://de.openfoodfacts.org/) exportierten Ressourcen als .csv-Dateien hinterlegt, aus welchen die "produkte.db"-Datenbank erstellt wurde.
     - "font" enthält die heruntergeladenen Ressourcen der Schriftart "Ubuntu Light".
-    - "images" enthält sämtliches auf der Webpräsenz verwendetes Bildmaterial. Im Unterverzeichnis "products" sind hierbei die Produktbilder hinterlegt. Das Unterverzeichnis "scores" enthält die für jedes Produkt hinterlegten Nutri-, Eco- und "Marco"-Scores.
-    - "includes" enthält ausgelagerte Dateien, welche an einigen Stellen im Code über eine entsprechende PHP-include-Anweisung eingebunden werden. Dies betrifft z.B. Footer, Navbar und Meta-Informationen jeder Webseite, welche ausgelagert wurden, um eine Änderung "global" wirksam zu machen und nicht jede einzelne Webseite bei Änderungen erneut anfassen zu müssen. Das Stylesheet "style.css" und das JavaScript-Skript "scripts.js" sind hier ebenfalls hinterlegt.
+    - "images" enthält sämtliches auf der Webpräsenz verwendetes Bildmaterial. Im Unterverzeichnis "products" sind hierbei die Produktbilder in wiederum entsprechenden Unterverzeichnissen hinterlegt.
+	Das Unterverzeichnis "scores" enthält die für jedes Produkt hinterlegten Nutri-, Eco- und "Marco"-Scores.
+    - "includes" enthält ausgelagerte Dateien, welche an einigen Stellen im Code über eine entsprechende PHP-include-Anweisung eingebunden werden.
+	Dies betrifft z.B. Footer, Navbar und Meta-Informationen jeder Webseite, welche ausgelagert wurden, um eine Änderung "global" wirksam zu machen und nicht jede einzelne Webseite bei Änderungen erneut anfassen zu müssen.
+	Das Stylesheet "style.css" und das JavaScript-Skript "scripts.js" sind hier ebenfalls hinterlegt.
