@@ -16,7 +16,7 @@ try {
   /* Set condition parameter for user study
         A: No Scores
         B: Nutri- & Eco-Score
-        C: "Marco-Score"
+        C: "Scale-Score"
       */
   $condition = "A";
 
@@ -40,8 +40,8 @@ try {
   print "<th>" . "nutriscore_score" . "</th>";
   print "<th>" . "ecoscore_grade" . "</th>";
   print "<th>" . "ecoscore_score" . "</th>";
-  print "<th>" . "marcoscore_grade" . "</th>";
-  print "<th>" . "marcoscore_score" . "</th>";
+  print "<th>" . "scalescore_grade" . "</th>";
+  print "<th>" . "scalescore_score" . "</th>";
   print "<th>" . "price" . "</th>";
   print "<th>" . "picture_path" . "</th>";
   print "<th>" . "condition" . "</th></tr>";
@@ -53,8 +53,8 @@ try {
     print "<td>" . $dummy['nutriscore_score'] . "</td>";
     print "<td>" . $dummy['ecoscore_grade'] . "</td>";
     print "<td>" . $dummy['ecoscore_score'] . "</td>";
-    print "<td>" . $dummy['marcoscore_grade'] . "</td>";
-    print "<td>" . $dummy['marcoscore_score'] . "</td>";
+    print "<td>" . $dummy['scalescore_grade'] . "</td>";
+    print "<td>" . $dummy['scalescore_score'] . "</td>";
     print "<td>" . $dummy['price'] . "</td>";
     print "<td>" . $dummy['picture_path'] . "</td>";
     print "<td>" . $dummy['condition'] . "</td></tr>";

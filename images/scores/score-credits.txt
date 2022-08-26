@@ -1,3 +1,3 @@
-All images of Eco- and Nutriscore are adapted from product entries of the free Open Food Facts Database https://de.openfoodfacts.org/
+All images of Eco- and Nutri-Score are adapted from product entries of the free Open Food Facts Database https://de.openfoodfacts.org/.
 
-All "Marco-Score" images are selfmade.
+All "Scale-Score" images are selfmade, using the resources of Eco- and Nutri-Score.
