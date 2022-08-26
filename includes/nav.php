@@ -1,7 +1,9 @@
 <div class="navbar">
   <!-- logo, image source: picture by Prawny on Pixabay (https://pixabay.com/de/users/prawny-162579/) -->
   <div class="logo">
-    <a href="index.php"><img src="images/logo.png" width="125px" alt="groceries-logo"><h1>Groceries</h1></a>
+    <a href="index.php"><img src="images/logo.png" width="125px" alt="groceries-logo">
+      <h1>Groceries</h1>
+    </a>
   </div>
   <nav>
     <ul id="MenuItems">
@@ -10,4 +12,4 @@
   </nav>
   <a href="warenkorb.php" id="warenkorb">&#x1f6d2;</a>
   <a class="menu-icon" onclick="menutoggle()">&#9776;</a>
-</div>    
+</div>

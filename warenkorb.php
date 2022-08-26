@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="de">
-  <head>
+
+<head>
     <?php include "includes/meta.php" ?>
     <title>Groceries | Warenkorb</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="container">
-    <?php include "includes/nav.php" ?>
+        <?php include "includes/nav.php" ?>
     </div>
 
     <!-- cart items details -->
@@ -74,14 +75,15 @@
 
     </div>
 
-      <!-- footer -->
-      <div class="footer">
-      <?php include "includes/footer.php" ?>
-      </div>
+    <!-- footer -->
+    <div class="footer">
+        <?php include "includes/footer.php" ?>
+    </div>
 
     <script>
-      <?php include "includes/scripts.js" ?>
+        <?php include "includes/scripts.js" ?>
     </script>
-  
-  </body>
+
+</body>
+
 </html>
