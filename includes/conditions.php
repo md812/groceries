@@ -50,7 +50,7 @@
         } else if ($rows[$scale]['nutriscore_grade'] == 'a' && $rows[$scale]['ecoscore_grade'] == 'e') {
             print "<img src='../images/scores/scalescore-c_nutri-a_eco-e.png' class='score' alt='scalescore-c-nutriscore-a-ecoscore-e'>";
         } else if ($rows[$scale]['nutriscore_grade'] == 'a' && $rows[$scale]['ecoscore_grade'] == NULL) {
-            print "<img src='../images/scores/scalescore-c_nutri-a_eco-unknown.png' class='score' alt='scalescore-c-nutriscore-a-ecoscore-unknown'>";
+            print "<img src='../images/scores/scalescore-b_nutri-a_eco-unknown.png' class='score' alt='scalescore-b-nutriscore-a-ecoscore-unknown'>";
         } else if ($rows[$scale]['nutriscore_grade'] == 'b' && $rows[$scale]['ecoscore_grade'] == 'a') {
             print "<img src='../images/scores/scalescore-b_nutri-b_eco-a.png' class='score' alt='scalescore-b-nutriscore-b-ecoscore-a'>";
         } else if ($rows[$scale]['nutriscore_grade'] == 'b' && $rows[$scale]['ecoscore_grade'] == 'b') {
@@ -62,7 +62,7 @@
         } else if ($rows[$scale]['nutriscore_grade'] == 'b' && $rows[$scale]['ecoscore_grade'] == 'e') {
             print "<img src='../images/scores/scalescore-c_nutri-b_eco-e.png' class='score' alt='scalescore-c-nutriscore-b-ecoscore-e'>";
         } else if ($rows[$scale]['nutriscore_grade'] == 'b' && $rows[$scale]['ecoscore_grade'] == NULL) {
-            print "<img src='../images/scores/scalescore-d_nutri-b_eco-unknown.png' class='score' alt='scalescore-c-nutriscore-a-ecoscore-unknown'>";
+            print "<img src='../images/scores/scalescore-c_nutri-b_eco-unknown.png' class='score' alt='scalescore-c-nutriscore-b-ecoscore-unknown'>";
         } else if ($rows[$scale]['nutriscore_grade'] == 'c' && $rows[$scale]['ecoscore_grade'] == 'a') {
             print "<img src='../images/scores/scalescore-b_nutri-c_eco-a.png' class='score' alt='scalescore-b-nutriscore-c-ecoscore-a'>";
         } else if ($rows[$scale]['nutriscore_grade'] == 'c' && $rows[$scale]['ecoscore_grade'] == 'b') {
@@ -100,15 +100,15 @@
         } else if ($rows[$scale]['nutriscore_grade'] == 'e' && $rows[$scale]['ecoscore_grade'] == NULL) {
             print "<img src='../images/scores/scalescore-e_nutri-e_eco-unknown.png' class='score' alt='scalescore-e-nutriscore-e-ecoscore-unknown'>";
         } else if ($rows[$scale]['nutriscore_grade'] == NULL && $rows[$scale]['ecoscore_grade'] == 'a') {
-            print "<img src='../images/scores/scalescore-unknown_nutri-unknown_eco-a.png' class='score' alt='scalescore-unknown-nutriscore-unknown-ecoscore-a'>";
+            print "<img src='../images/scores/scalescore-b_nutri-unknown_eco-a.png' class='score' alt='scalescore-b-nutriscore-unknown-ecoscore-a'>";
         } else if ($rows[$scale]['nutriscore_grade'] == NULL && $rows[$scale]['ecoscore_grade'] == 'b') {
-            print "<img src='../images/scores/scalescore-unknown_nutri-unknown_eco-b.png' class='score' alt='scalescore-unknown-nutriscore-unknown-ecoscore-b'>";
+            print "<img src='../images/scores/scalescore-c_nutri-unknown_eco-b.png' class='score' alt='scalescore-c-nutriscore-unknown-ecoscore-b'>";
         } else if ($rows[$scale]['nutriscore_grade'] == NULL && $rows[$scale]['ecoscore_grade'] == 'c') {
-            print "<img src='../images/scores/scalescore-unknown_nutri-unknown_eco-c.png' class='score' alt='scalescore-unknown-nutriscore-unknown-ecoscore-c'>";
+            print "<img src='../images/scores/scalescore-d_nutri-unknown_eco-c.png' class='score' alt='scalescore-d-nutriscore-unknown-ecoscore-c'>";
         } else if ($rows[$scale]['nutriscore_grade'] == NULL && $rows[$scale]['ecoscore_grade'] == 'd') {
-            print "<img src='../images/scores/scalescore-unknown_nutri-unknown_eco-d.png' class='score' alt='scalescore-unknown-nutriscore-unknown-ecoscore-d'>";
+            print "<img src='../images/scores/scalescore-e_nutri-unknown_eco-d.png' class='score' alt='scalescore-e-nutriscore-unknown-ecoscore-d'>";
         } else if ($rows[$scale]['nutriscore_grade'] == NULL && $rows[$scale]['ecoscore_grade'] == 'e') {
-            print "<img src='../images/scores/scalescore-unknown_nutri-unknown_eco-e.png' class='score' alt='scalescore-unknown-nutriscore-unknown-ecoscore-e'>";
+            print "<img src='../images/scores/scalescore-e_nutri-unknown_eco-e.png' class='score' alt='scalescore-e-nutriscore-unknown-ecoscore-e'>";
         } else if ($rows[$scale]['nutriscore_grade'] == NULL && $rows[$scale]['ecoscore_grade'] == NULL) {
             print "<img src='../images/scores/scalescore-unknown_nutri-unknown_eco-unknown.png' class='score' alt='scalescore-unknown-nutriscore-unknown-ecoscore-unknown'>";
         }
