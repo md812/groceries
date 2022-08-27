@@ -224,7 +224,7 @@ h4 {
 /* footer */
 .footer {
     background: #000;
-    color: #8a8a8a;
+    color: #000;
     font-size: 14px;
     padding: 20px 0 20px;
     background: #fff;
@@ -232,16 +232,11 @@ h4 {
 }
 
 .footer p {
-    color: #fff;
+    color: #000;
     ;
 }
 
-ul li a:hover .footer {
-    color: #000;
-}
-
 .footer h3 {
-    color: #058b49;
     margin-bottom: 10px;
 }
 
@@ -249,17 +244,23 @@ ul {
     list-style-type: none;
 }
 
+.contact1 {
+    float: left;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+.contact2 {
+    display: block;
+    text-align: center;
+}
+
 .footer hr {
     border: none;
     background: #058b49;
     height: 2px;
-    margin: 20px 0;
-}
-
-.footer li a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
+    margin: 10px 0;
 }
 
 #copyright {
@@ -373,78 +374,19 @@ th:last-child {
     text-align: right;
 }
 
-/* account-page */
-.account-page {
-    padding: 50px 0;
-}
-
-.form-container {
-    background: #fff;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.form-container span {
+/* source for Impressum */
+#source {
     font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
+    margin-top: 10px;
 }
 
-.form-btn {
-    display: inline-block;
-}
-
-.form-container form {
-    max-width: 300px;
-    padding: 0 20px;
-    position: absolute;
-    top: 130px;
-    transition: transform 1s;
+#source a {
+    color: #000;
+    text-decoration: none;
 }
 
 form p input {
-    margin-left: 10px;
-}
-
-form p .btn {
-    margin-left: 10px;
-    border: none;
-}
-
-form p .btn:focus {
-    outline: none;
-}
-
-
-#Indicator {
-    width: 100px;
-    border: none;
-    background: #058b49;
-    height: 3px;
-    margin-top: 8px;
-    transform: translateX(100px);
-    transition: transform 1s;
-}
-
-/* impressum, data protection, TOU */
-.privacy {
-    text-align: center;
-    margin-left: var(--margin-side);
-    margin-right: var(--margin-side);
-}
-
-#source {
-    font-weight: bold;
-    color: var(--color-8);
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -455,10 +397,15 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
     padding: 50px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 /* media query for menu */
 

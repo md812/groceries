@@ -35,6 +35,9 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
     # HINWEIS 3:
     Für den erneuten Aufruf der Webpräsenz von Groceries sind nach der initialen Konfiguration nur noch die Schritte 2., 4. und 5. nötig, sofern der Apache-Server nach der letzten Verwendung wieder gestoppt wurde. Ansonsten ist nur Schritt 5. nötig, da der Apache-Server immer noch läuft.
 
+    # HINWEIS 4:
+    Für die vollständige Funktionalität des Online-Shops ist die Aktivierung von JavaScript zwingend erforderlich!
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
