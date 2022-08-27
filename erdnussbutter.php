@@ -32,7 +32,8 @@ try {
   $rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
   // dummy table for test usage of 12 random products
-  print "<br><h1>DUMMY-TABELLE:</h1><br><br>";
+  print "<br><h1>DUMMY-TABELLE:</h1><br>";
+  print "<br><h3 style='text-align: center'>Current condition: $condition</h3><br><br>";
   print "<table border=1>";
   print "<tr><th>" . "brand" . "</th>";
   print "<th>" . "product_name_de" . "</th>";
@@ -43,8 +44,7 @@ try {
   print "<th>" . "scalescore_grade" . "</th>";
   print "<th>" . "scalescore_score" . "</th>";
   print "<th>" . "price" . "</th>";
-  print "<th>" . "picture_path" . "</th>";
-  print "<th>" . "condition" . "</th></tr>";
+  print "<th>" . "picture_path" . "</th></tr>";
 
   foreach ($rows as $dummy) {
     print "<tr><td>" . $dummy['brand'] . "</td>";
@@ -56,8 +56,7 @@ try {
     print "<td>" . $dummy['scalescore_grade'] . "</td>";
     print "<td>" . $dummy['scalescore_score'] . "</td>";
     print "<td>" . $dummy['price'] . "</td>";
-    print "<td>" . $dummy['picture_path'] . "</td>";
-    print "<td>" . $dummy['condition'] . "</td></tr>";
+    print "<td>" . $dummy['picture_path'] . "</td></tr>";
   }
 
   print "</table><br><br>";
