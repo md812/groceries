@@ -125,30 +125,6 @@ button {
     cursor: pointer;
 }
 
-.header .row {
-    margin-top: 70px;
-}
-
-.categories {
-    margin: 70px 0;
-}
-
-.col-3 {
-    flex: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-
-.col-3 img {
-    width: 100%
-}
-
-.col-3 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-
 .small-container {
     max-width: 1080px;
     margin: auto;
@@ -185,26 +161,6 @@ button {
     margin-bottom: 10px;
 }
 
-.title {
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.title::after {
-    content: '';
-    background: #058b49;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 h4 {
     color: #000;
     font-weight: normal;
@@ -215,6 +171,7 @@ h4 {
     font-size: 18px;
     font-weight: bold;
     color: #555;
+    margin-bottom: 10px;
 }
 
 .col-4:hover {
@@ -407,7 +364,84 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* media query for menu */
+/* Modal for Images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page */
+.productImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.productImg:hover {
+    opacity: 0.7;
+}
+
+.scoreImg {
+    width: 150px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* media queries for RWD */
 
 @media only screen and (max-width: 800px) {
 
@@ -453,5 +487,9 @@ h1 {
 
     .cart-info p {
         display: none;
+    }
+
+    .modal-content {
+        width: 100%;
     }
 }

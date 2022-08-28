@@ -6,14 +6,14 @@
 
         <div class="contact1">
             <h3>Marco Druschba</h3>
-            <p> Carl von Ossietzky Universität Oldenburg<br>
+            <p>Carl von Ossietzky Universität Oldenburg<br>
                 Ammerländer Heerstraße 114-118<br>
                 26129 Oldenburg, Deutschland</p><br>
             <p>E-Mail: marco.druschba(at)uni-oldenburg.de</p><br>
         </div>
         <div class="contact2">
             <h3>Dr. Gözel Shakeri</h3>
-            <p> Carl von Ossietzky Universität Oldenburg<br>
+            <p>Carl von Ossietzky Universität Oldenburg<br>
                 Ammerländer Heerstraße 114-118<br>
                 26129 Oldenburg, Deutschland</p><br>
             <p>E-Mail: goezel.shakeri(at)uni-oldenburg.de</p><br>
