@@ -13,15 +13,17 @@
         <?php include "includes/nav.php" ?>
     </div>
 
-    <div class="row">
-        <div class="col-2">
-            <h1>Kaufe online<br> deine Lebensmittel.</h1><br>
-            <p>Herzlich willkommen bei Groceries! Schauen Sie in unserem Online-Shop vorbei, vergleichen Sie Ihre Auswahl und entdecken Sie Produkte aus aller Welt!</p><br>
-            <p>Hier können Sie Ihre Auswahl der Produktkategorie treffen.</p>
-            <a href="cerealien.php" class="btn">Cerealien &#8594;</a>
-            <a href="erdnussbutter.php" class="btn">Erdnussbutter & -mus &#8594;</a>
-            <a href="milch.php" class="btn">Milch &#8594;</a>
-        </div>
+    <h1>Kaufe online deine Lebensmittel.</h1><br>
+
+    <div class="center">
+        <p>Herzlich willkommen bei Groceries! Schauen Sie in unserem Online-Shop vorbei, vergleichen Sie Ihre Auswahl und entdecken Sie Produkte aus aller Welt!<br>
+        Hier können Sie Ihre Auswahl der Produktkategorie treffen.</p>
+    </div>
+
+    <div class="center">
+        <button onclick="location.href='cerealien.php'" class="btn">Cerealien &#8594;</button>
+        <button onclick="location.href='erdnussbutter.php'" class="btn">Erdnussbutter & -mus &#8594;</button>
+        <button onclick="location.href='milch.php'" class="btn">Milch & -ersatz &#8594;</button>
     </div>
 
     <!-- footer -->

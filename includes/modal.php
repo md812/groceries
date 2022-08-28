@@ -7,7 +7,7 @@
     <span class="close">&times;</span>
 
     <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img">
+    <img class="modal-content" alt="modal" id="img">
 
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>

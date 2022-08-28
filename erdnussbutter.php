@@ -33,7 +33,7 @@ try {
 
   // dummy table for test usage of 12 random products
   print "<br><h1>DUMMY-TABELLE:</h1><br>";
-  print "<br><h3 style='text-align: center'>Current condition: $condition</h3><br><br>";
+  print "<br><h2 style='text-align: center'>Current condition: $condition</h2><br><br>";
   print "<table border=1>";
   print "<tr><th>" . "brand" . "</th>";
   print "<th>" . "product_name_de" . "</th>";
@@ -79,99 +79,99 @@ try {
     <div class="row">
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[0]['picture_path']}"; ?>" alt="product-1" title="<?php echo "{$rows[0]['brand']} {$rows[0]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[0]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[0]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[0]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[0]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[0]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[0]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(0); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[1]['picture_path']}"; ?>" alt="product-2" title="<?php echo "{$rows[1]['brand']} {$rows[1]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[1]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[1]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[1]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[1]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[1]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[1]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(1); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[2]['picture_path']}"; ?>" alt="product-3" title="<?php echo "{$rows[2]['brand']} {$rows[2]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[2]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[2]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[2]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[2]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[2]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[2]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(2); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[3]['picture_path']}"; ?>" alt="product-4" title="<?php echo "{$rows[3]['brand']} {$rows[3]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[3]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[3]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[3]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[3]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[3]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[3]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(3); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[4]['picture_path']}"; ?>" alt="product-5" title="<?php echo "{$rows[4]['brand']} {$rows[4]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[4]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[4]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[4]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[4]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[4]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[4]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(4); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[5]['picture_path']}"; ?>" alt="product-6" title="<?php echo "{$rows[5]['brand']} {$rows[5]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[5]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[5]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[5]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[5]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[5]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[5]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(5); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[6]['picture_path']}"; ?>" alt="product-7" title="<?php echo "{$rows[6]['brand']} {$rows[6]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[6]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[6]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[6]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[6]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[6]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[6]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(6); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[7]['picture_path']}"; ?>" alt="product-8" title="<?php echo "{$rows[7]['brand']} {$rows[7]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[7]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[7]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[7]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[7]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[7]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[7]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(7); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[8]['picture_path']}"; ?>" alt="product-9" title="<?php echo "{$rows[8]['brand']} {$rows[8]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[8]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[8]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[8]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[8]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[8]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[8]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(8); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[9]['picture_path']}"; ?>" alt="product-10" title="<?php echo "{$rows[9]['brand']} {$rows[9]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[9]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[9]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[9]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[9]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[9]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[9]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(9); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[10]['picture_path']}"; ?>" alt="product-11" title="<?php echo "{$rows[10]['brand']} {$rows[10]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[10]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[10]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[10]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[10]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[10]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[10]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(10); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
       <div class="col-4">
         <img class="productImg" src="<?php echo "{$rows[11]['picture_path']}"; ?>" alt="product-12" title="<?php echo "{$rows[11]['brand']} {$rows[11]['product_name_de']}"; ?>">
-        <h4><?php echo "{$rows[11]['brand']}"; ?></h4>
-        <h4><?php echo "{$rows[11]['product_name_de']}"; ?></h4>
-        <p><?php echo "{$rows[11]['price']}" . "€ pro 500g"; ?></p>
+        <h2><?php echo "{$rows[11]['brand']}"; ?></h2>
+        <h2><?php echo "{$rows[11]['product_name_de']}"; ?></h2>
+        <h3><?php echo "{$rows[11]['price']}" . "€ pro 500g"; ?></h3>
         <?php showConditionscore(11); ?>
-        <button class='btn add'>Zum Warenkorb hinzufügen</button>
+        <button class='btn'>Zum Warenkorb hinzufügen</button>
       </div>
     </div>
 

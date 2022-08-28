@@ -1,15 +1,3 @@
-// <!-- js for toggle menu -->
-var MenuItems = document.getElementById("MenuItems");
-MenuItems.style.maxHeight = "0px";
-
-function menutoggle() {
-  if (MenuItems.style.maxHeight == "0px") {
-    MenuItems.style.maxHeight = "200px";
-  } else {
-    MenuItems.style.maxHeight = "0px";
-  }
-}
-
 // Modal for Images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page
 // Get the modal
 var modal = document.getElementById("modal");

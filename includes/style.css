@@ -44,10 +44,6 @@ nav ul li a {
     color: #000;
 }
 
-#warenkorb {
-    color: #fff;
-}
-
 .logo a {
     font-weight: bold;
     text-decoration: none;
@@ -55,7 +51,7 @@ nav ul li a {
 }
 
 a:hover {
-    color: #058b49 !important;
+    color: #135B8B !important;
 }
 
 .container {
@@ -96,22 +92,13 @@ a:hover {
 
 .btn {
     display: inline-block;
-    background: #058b49;
+    background: #135B8B;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
     border: none;
-}
-
-.btn .add {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
 }
 
 button {
@@ -157,21 +144,18 @@ button {
     max-width: 40%;
 }
 
-.col-4 h4 {
-    margin-bottom: 10px;
-}
-
-h4 {
+.col-4 h2 {
+    margin-top: 10px;
     color: #000;
     font-weight: normal;
     font-size: 20px;
 }
 
-.col-4 p {
+.col-4 h3 {
     font-size: 18px;
     font-weight: bold;
     color: #555;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .col-4:hover {
@@ -215,7 +199,7 @@ ul {
 
 .footer hr {
     border: none;
-    background: #058b49;
+    background: #135B8B;
     height: 2px;
     margin: 10px 0;
 }
@@ -223,7 +207,7 @@ ul {
 #copyright {
     text-align: center;
     font-weight: bold;
-    color: #058b49;
+    color: #135B8B;
     margin-top: 20px;
 }
 
@@ -240,7 +224,7 @@ ul {
 }
 
 select {
-    border: 1px solid #058b49;
+    border: 1px solid #135B8B;
     padding: 5px;
 }
 
@@ -254,7 +238,7 @@ select:focus {
 
 .page-btn span {
     display: inline-block;
-    border: 1px solid #058b49;
+    border: 1px solid #135B8B;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -282,7 +266,7 @@ th {
     text-align: left;
     padding: 5px;
     color: #fff;
-    background: #058b49;
+    background: #135B8B;
     font-weight: normal;
 }
 
@@ -297,7 +281,7 @@ td input {
 }
 
 td a {
-    color: #058b49;
+    color: #135B8B;
     font-size: 12px;
 }
 
@@ -318,7 +302,7 @@ td img {
 }
 
 .total-price table {
-    border-top: 3px solid #058b49;
+    border-top: 3px solid #135B8B;
     width: 100%;
     max-width: 400px;
 }
@@ -354,7 +338,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 350px;
     padding: 50px;
 }
 
@@ -362,6 +346,11 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.center button {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Modal for Images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page */
@@ -452,39 +441,7 @@ h1 {
     cursor: pointer;
 }
 
-/* media queries for RWD */
-
-@media only screen and (max-width: 800px) {
-
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5;
-    }
-
-    nav ul li {
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: #fff;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-}
-
-/* media query for less than 600 screen size */
+/* media query for less than 600px screen size */
 @media only screen and (max-width: 600px) {
     .row {
         text-align: center;

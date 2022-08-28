@@ -7,9 +7,8 @@
   </div>
   <nav>
     <ul id="MenuItems">
-      <li><a href="index.php">Start</a></li>
+      <li><a href="warenkorb.php">&#x1f6d2;</a></li>
     </ul>
   </nav>
-  <a href="warenkorb.php" id="warenkorb">&#x1f6d2;</a>
-  <a class="menu-icon" onclick="menutoggle()">&#9776;</a>
+
 </div>

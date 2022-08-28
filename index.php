@@ -13,7 +13,7 @@
     <?php include "includes/nav.php" ?>
   </div>
 
-  <h1>Herzlich Willkommen!</h1>
+  <h1>Herzlich willkommen!</h1>
 
   <!-- image source: https://uol.de/corporate-design/uni-logo -->
   <div>
@@ -33,12 +33,18 @@
 
     <div class="center">
       <form id="index-form" action="shop.php">
-        <p><input type="checkbox" required> Ich bin mindestens 18 Jahre alt.</p>
-        <p><input type="checkbox" required> Ich habe keine bekannten Lebensmittelallergien oder -unverträglichkeiten.</p>
-        <p><input type="checkbox" required> Es wurde mir die Möglichkeit für Rückfragen angeboten. Mir ist bekannt, dass ich jederzeit Fragen stellen kann.</p>
-        <p><input type="checkbox" required> Ich bin mit der Aufzeichnung meiner Stimme und der Bildschirmansicht zu Analysezwecken einverstanden.</p>
-        <p><input type="checkbox" required> Ich habe die Einverständniserklärung zur Teilnahme an der Nutzerstudie unterschrieben.</p><br>
-        <p><input type="checkbox" required> Ich bin mit der Durchführung der Nutzerstudie einverstanden.</p>
+        <p><input type="checkbox" id="age" required>
+        <label for="age">Ich bin mindestens 18 Jahre alt.</label></p>
+        <p><input type="checkbox" id="allergies" required>
+        <label for="allergies">Ich habe keine bekannten Lebensmittelallergien oder -unverträglichkeiten.</label></p>
+        <p><input type="checkbox" id="questions" required>
+        <label for="questions">Es wurde mir die Möglichkeit für Rückfragen angeboten. Mir ist bekannt, dass ich jederzeit Fragen stellen kann.</label></p>
+        <p><input type="checkbox" id="recording" required>
+        <label for="recording">Ich bin mit der Aufzeichnung meiner Stimme und der Bildschirmansicht zu Analysezwecken einverstanden.</label></p>
+        <p><input type="checkbox" id="signature" required>
+        <label for="signature">Ich habe die Einverständniserklärung zur Teilnahme an der Nutzerstudie unterschrieben.</label></p><br>
+        <p><input type="checkbox" id="agreed" required>
+        <label for="agreed">Ich bin mit der Durchführung der Nutzerstudie einverstanden.</label></p>
       </form>
     </div>
 
