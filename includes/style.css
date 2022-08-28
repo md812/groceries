@@ -44,10 +44,20 @@ nav ul li a {
     color: #000;
 }
 
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
 .logo a {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+}
+
+#logo {
+    width: 125px;
 }
 
 a:hover {
@@ -107,7 +117,7 @@ button {
 }
 
 .btn:hover {
-    background: #000;
+    background: #103756;
     color: #fff;
     cursor: pointer;
 }
