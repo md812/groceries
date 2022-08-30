@@ -166,6 +166,7 @@ button {
     font-weight: bold;
     color: #555;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .col-4:hover {
