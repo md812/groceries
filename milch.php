@@ -21,10 +21,10 @@ try {
   $condition = "C";
 
   // Connect to DB
-  $db = new PDO('sqlite:db/produkte.db');
+  $db = new PDO('sqlite:db/database.db');
 
   // Select 12 random entries of DB, depending on current condition $condition
-  $sql = "SELECT DISTINCT * FROM milch WHERE condition = '$condition' LIMIT 12";
+  $sql = "SELECT DISTINCT * FROM products WHERE category = 'Milch' AND condition = '$condition' LIMIT 12";
   $result = $db->prepare($sql);
   $result->execute();
 
@@ -42,7 +42,6 @@ try {
   print "<th>" . "ecoscore_grade" . "</th>";
   print "<th>" . "ecoscore_score" . "</th>";
   print "<th>" . "scalescore_grade" . "</th>";
-  print "<th>" . "scalescore_score" . "</th>";
   print "<th>" . "price" . "</th>";
   print "<th>" . "picture_path" . "</th></tr>";
 
@@ -54,7 +53,6 @@ try {
     print "<td>" . $dummy['ecoscore_grade'] . "</td>";
     print "<td>" . $dummy['ecoscore_score'] . "</td>";
     print "<td>" . $dummy['scalescore_grade'] . "</td>";
-    print "<td>" . $dummy['scalescore_score'] . "</td>";
     print "<td>" . $dummy['price'] . "</td>";
     print "<td>" . $dummy['picture_path'] . "</td></tr>";
   }

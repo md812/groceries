@@ -21,10 +21,10 @@ try {
   $condition = "B";
 
   // Connect to DB
-  $db = new PDO('sqlite:db/produkte.db');
+  $db = new PDO('sqlite:db/database.db');
 
   // Select 12 random entries of DB, depending on current condition $condition
-  $sql = "SELECT DISTINCT * FROM erdnussbutter WHERE condition = '$condition' LIMIT 12";
+  $sql = "SELECT DISTINCT * FROM products WHERE category = 'Erdnussbutter' AND condition = '$condition' LIMIT 12";
   $result = $db->prepare($sql);
   $result->execute();
 
@@ -32,34 +32,32 @@ try {
   $rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
   // dummy table for test usage of 12 random products
-  print "<br><h1>DUMMY-TABELLE:</h1><br>";
-  print "<br><h2 style='text-align: center'>Current condition: $condition</h2><br><br>";
-  print "<table border=1>";
-  print "<tr><th>" . "brand" . "</th>";
-  print "<th>" . "product_name_de" . "</th>";
-  print "<th>" . "nutriscore_grade" . "</th>";
-  print "<th>" . "nutriscore_score" . "</th>";
-  print "<th>" . "ecoscore_grade" . "</th>";
-  print "<th>" . "ecoscore_score" . "</th>";
-  print "<th>" . "scalescore_grade" . "</th>";
-  print "<th>" . "scalescore_score" . "</th>";
-  print "<th>" . "price" . "</th>";
-  print "<th>" . "picture_path" . "</th></tr>";
+  // print "<br><h1>DUMMY-TABELLE:</h1><br>";
+  // print "<br><h2 style='text-align: center'>Current condition: $condition</h2><br><br>";
+  // print "<table border=1>";
+  // print "<tr><th>" . "brand" . "</th>";
+  // print "<th>" . "product_name_de" . "</th>";
+  // print "<th>" . "nutriscore_grade" . "</th>";
+  // print "<th>" . "nutriscore_score" . "</th>";
+  // print "<th>" . "ecoscore_grade" . "</th>";
+  // print "<th>" . "ecoscore_score" . "</th>";
+  // print "<th>" . "scalescore_grade" . "</th>";
+  // print "<th>" . "price" . "</th>";
+  // print "<th>" . "picture_path" . "</th></tr>";
 
-  foreach ($rows as $dummy) {
-    print "<tr><td>" . $dummy['brand'] . "</td>";
-    print "<td>" . $dummy['product_name_de'] . "</td>";
-    print "<td>" . $dummy['nutriscore_grade'] . "</td>";
-    print "<td>" . $dummy['nutriscore_score'] . "</td>";
-    print "<td>" . $dummy['ecoscore_grade'] . "</td>";
-    print "<td>" . $dummy['ecoscore_score'] . "</td>";
-    print "<td>" . $dummy['scalescore_grade'] . "</td>";
-    print "<td>" . $dummy['scalescore_score'] . "</td>";
-    print "<td>" . $dummy['price'] . "</td>";
-    print "<td>" . $dummy['picture_path'] . "</td></tr>";
-  }
+  // foreach ($rows as $dummy) {
+  //   print "<tr><td>" . $dummy['brand'] . "</td>";
+  //   print "<td>" . $dummy['product_name_de'] . "</td>";
+  //   print "<td>" . $dummy['nutriscore_grade'] . "</td>";
+  //   print "<td>" . $dummy['nutriscore_score'] . "</td>";
+  //   print "<td>" . $dummy['ecoscore_grade'] . "</td>";
+  //   print "<td>" . $dummy['ecoscore_score'] . "</td>";
+  //   print "<td>" . $dummy['scalescore_grade'] . "</td>";
+  //   print "<td>" . $dummy['price'] . "</td>";
+  //   print "<td>" . $dummy['picture_path'] . "</td></tr>";
+  // }
 
-  print "</table><br><br>";
+  // print "</table><br><br>";
   // End of dummy table
 
 } catch (Exception $e) {

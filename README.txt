@@ -2,7 +2,7 @@
 Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP konfigurierten Apache-Servers. An dieser Stelle erfolgt hierzu eine Kurzanleitung:
 
     # HINWEIS 0:
-    Es wird davon ausgegangen, dass das System auf einem Windows-PC getestet wird.
+    Es wird davon ausgegangen, dass das System auf einem Windows-PC mit Google Chrome getestet wird.
 
     0. Download von XAMPP über https://www.apachefriends.org/de/index.html.
     1. Abgegebenes "groceries"-Verzeichnis an gewünschter Stelle speichern.
@@ -46,8 +46,8 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
 Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insbesondere ist hier die "index.php"-Datei, welche die Startseite enthält, sowie diese README-Datei, relevant.
 
 Weiterhin gibt es Unterverzeichnisse:
-    - "db" enthält die Datenbank "produkte.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
-	Die Datenbank enthält die konkreten Produkte inkl. hinterlegter Scores. Zusätzlich sind im Unterverzeichnis "res" die aus der Open Food Facts-Datenbank (https://de.openfoodfacts.org/) exportierten Ressourcen als .csv-Dateien hinterlegt, aus welchen die "produkte.db"-Datenbank erstellt wurde.
+    - "db" enthält die Datenbank "database.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
+	Die Datenbank enthält die konkreten Produkte inkl. hinterlegter Scores. Zusätzlich sind im Unterverzeichnis "res" die aus der Open Food Facts-Datenbank (https://de.openfoodfacts.org/) exportierten Ressourcen als .csv-Dateien hinterlegt, aus welchen die Tabelle "products" der Datenbank erstellt wurde.
     - "font" enthält die heruntergeladenen Ressourcen der Schriftart "Ubuntu Light".
     - "images" enthält sämtliches auf der Webpräsenz verwendetes Bildmaterial. Im Unterverzeichnis "products" sind hierbei die Produktbilder in wiederum entsprechenden Unterverzeichnissen hinterlegt.
 	Das Unterverzeichnis "scores" enthält die für jedes Produkt hinterlegten Nutri-, Eco- und "Scale"-Scores.
