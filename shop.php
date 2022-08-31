@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// redirect not logged in user to index.php in case they want to reach this page by entering URL
+if (!isset($_SESSION['login'])) {
+    header("Location:/index.php");
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="de">
@@ -17,7 +26,7 @@
 
     <div class="center">
         <p>Herzlich willkommen bei Groceries! Schauen Sie in unserem Online-Shop vorbei, vergleichen Sie Ihre Auswahl und entdecken Sie Produkte aus aller Welt!<br>
-        Hier können Sie Ihre Auswahl der Produktkategorie treffen.</p>
+            Hier können Sie Ihre Auswahl der Produktkategorie treffen.</p>
     </div>
 
     <div class="center">

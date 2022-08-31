@@ -60,6 +60,11 @@ nav ul li a {
     width: 125px;
 }
 
+.error {
+    color: #B30000;
+    margin-top: 25px;
+}
+
 a:hover {
     color: #135B8B !important;
 }
@@ -105,7 +110,7 @@ a:hover {
     background: #135B8B;
     color: #fff;
     padding: 8px 30px;
-    margin: 30px 0;
+    margin: 10px 0;
     border-radius: 30px;
     transition: background 0.5s;
     border: none;
@@ -349,7 +354,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 300px;
     padding: 50px;
 }
 
@@ -362,6 +367,19 @@ h1 {
 .center button {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.center input {
+    font-weight: bold;
+}
+
+.login input {
+    margin-bottom: 10px;
+}
+
+.login h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 /* Modal for Images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page */

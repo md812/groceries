@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// redirect not logged in user to index.php in case they want to reach this page by entering URL
+if (!isset($_SESSION['login'])) {
+    header("Location:/index.php");
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="de">

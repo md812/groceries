@@ -7,6 +7,9 @@
   </div>
   <nav>
     <ul id="MenuItems">
+      <li>
+        <h3><?php echo "Aktueller Nutzer: " . htmlspecialchars($_SESSION['username']); ?></h3>
+      </li>
       <li><a href="warenkorb.php">&#x1f6d2;</a></li>
     </ul>
   </nav>

@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// redirect not logged in user to index.php in case they want to reach this page by entering URL
+if (!isset($_SESSION['login'])) {
+  header("Location:/index.php");
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="de">
@@ -28,7 +37,7 @@ try {
   $result = $db->prepare($sql);
   $result->execute();
 
-  // Save data from db in array
+  // Save data from DB in array
   $rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
   // dummy table for test usage of 12 random products
