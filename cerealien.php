@@ -33,7 +33,7 @@ try {
   $db = new PDO('sqlite:db/database.db');
 
   // Select 12 random entries of DB, depending on current condition $condition
-  $sql = "SELECT DISTINCT * FROM products WHERE category = 'Milch' AND condition = '$condition' LIMIT 12";
+  $sql = "SELECT DISTINCT * FROM products WHERE category = 'Cerealien' AND condition = '$condition' LIMIT 12";
   $result = $db->prepare($sql);
   $result->execute();
 
