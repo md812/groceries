@@ -1,16 +1,15 @@
 <div class="navbar">
   <!-- logo, image source: picture by Prawny on Pixabay (https://pixabay.com/de/users/prawny-162579/) -->
   <div class="logo">
-    <a href="index.php"><img src="images/logo.png" id="logo" alt="groceries-logo">
-      <h1>Groceries</h1>
-    </a>
+    <p><img src="images/logo.png" id="logo" alt="groceries-logo">
+    <h1>Groceries</h1>
+    </p>
   </div>
   <nav>
     <ul id="MenuItems">
       <li>
-        <h3><?php echo "Aktueller Nutzer: " . htmlspecialchars($_SESSION['username']); ?></h3>
+        <h2><?php echo "&#128100; " . htmlspecialchars($_SESSION['username']); ?></h2>
       </li>
-      <li><a href="warenkorb.php">&#x1f6d2;</a></li>
       <li><a href="logout.php">Abmelden</a></li>
     </ul>
   </nav>

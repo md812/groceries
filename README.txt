@@ -6,7 +6,7 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
 
     0. Download von XAMPP über https://www.apachefriends.org/de/index.html.
     1. Abgegebenes "groceries"-Verzeichnis an gewünschter Stelle speichern.
-        1.1 Möglichkeit 1: Dateien des "groceries"-Verzeichnisses direkt im "htdocs"-Verzeichnis (z.B. "C:/xampp/htdocs") speichern.
+        1.1 Möglichkeit 1: Dateien des "groceries"-Verzeichnisses direkt im "htdocs"-Verzeichnis (z.B. "C:/xampp/htdocs/groceries") speichern.
         1.2 Möglichkeit 2: Alternativen Pfad nach eigenem Wunsch (z.B. "C:/Studium/Bachelorarbeit/groceries") verwenden.
     2. Starten des nun installierten XAMPP Control Panel mit Administratorrechten.
 
@@ -43,7 +43,7 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
 
 
 # VERZEICHNISSTRUKTUR:
-Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insbesondere ist hier die "index.php"-Datei, welche die Startseite enthält, sowie diese README-Datei, relevant.
+Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insbesondere ist hier die "index.php"-Datei, welche die Startseite enthält, die shop.php-Datei, welche den Online-Shop enthält sowie diese README-Datei, relevant.
 
 Weiterhin gibt es Unterverzeichnisse:
     - "db" enthält die Datenbank "database.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
