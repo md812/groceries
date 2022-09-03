@@ -28,6 +28,23 @@ try {
         C: "Scale-Score"
   */
   $condition = "A";
+  if (isset($_POST["condition"])) {
+    $select = $_POST["condition"];
+    switch ($select) {
+      case "A":
+        $condition = "A";
+        break;
+      case "B":
+        $condition = "B";
+        break;
+      case "C":
+        $condition = "C";
+        break;
+      default:
+        $condition = "A";
+        break;
+    }
+  }
 
   // Connect to DB
   $db = new PDO('sqlite:db/database.db');
@@ -70,7 +87,19 @@ try {
   </div>
 
   <!-- display 12 products -->
-  <h1 class="center">Online-Shop</h1>
+  <h1 class="center">Online-Shop</h1><br>
+  <div class="center">
+    <label id="condition-label" for="condition">Condition: </label>
+    <form method="POST">
+      <select id="condition" name="condition" onchange="this.form.submit()">
+        <option value="" selected></option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+    </form>
+  </div>
+
   <section class="container content-section small-container">
     <h1 class="section-header category">Cerealien</h1>
     <div class="shop-items row">

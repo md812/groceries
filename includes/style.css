@@ -525,7 +525,7 @@ h1 {
 }
 
 .shop-item-price {
-    
+
     align-items: center;
     padding: 5px;
 }
@@ -646,4 +646,10 @@ h1 {
 
 .section-header {
     margin-bottom: 25px;
+}
+
+#condition-label {
+    display: inline-block;
+    width: 80px;
+    /* text-align: right;    */
 }
