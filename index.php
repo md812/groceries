@@ -15,7 +15,7 @@ error_reporting(0);
   <title>Groceries | Start</title>
 </head>
 
-<!-- Login script adapted from https://www.php-kurs.com/loesung-einlogg-script.htm -->
+<!-- login script adapted from https://www.php-kurs.com/loesung-einlogg-script.htm -->
 <?php
 try {
 
@@ -25,28 +25,32 @@ try {
     and isset($_POST['password']) and $_POST['password'] != ""
   ) {
 
-    // Connect to DB
+    // connect to DB
     $db = new PDO('sqlite:db/database.db');
 
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Select all users of DB
+    // select all users of DB
     $sql = "SELECT * FROM users WHERE `username` = '$username'";
     $result = $db->prepare($sql);
     $result->execute();
 
-    // Save data from DB in array
-    $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+    // save data from DB in array
+    $rows_user = $result->fetchAll(PDO::FETCH_ASSOC);
 
     // check if username and password (hashed in DB) are correct
-    global $rows;
+    global $rows_user;
     if (
-      $_POST['username'] == $rows[0]['username']
-      and password_verify($password, $rows[0]['password'])
+      $_POST['username'] == $rows_user[0]['username']
+      and password_verify($password, $rows_user[0]['password'])
     ) {
+      // successful login
       $_SESSION['username'] = $username;
       $_SESSION['login'] = true;
+      $_SESSION['condition1'] = $rows_user[0]['condition1'];
+      $_SESSION['condition2'] = $rows_user[0]['condition2'];
+      $_SESSION['condition3'] = $rows_user[0]['condition3'];
     } else {
       echo "<h2 class='center error'>Fehler: Ungültige Eingabe!</h2>";
       $_SESSION['login'] = false;
@@ -88,6 +92,7 @@ try {
   die('Interner Fehler: Die Datenbankverbindung konnte leider nicht aufgebaut werden.');
 }
 ?>
+<!-- end of adaption -->
 
 <body>
 
@@ -114,7 +119,7 @@ try {
     </div>
 
     <div class="center">
-      <form id="form-checklist" action="shop.php">
+      <form id="form-checklist" action="shop.php" autocomplete="off">
         <p><input type="checkbox" id="age" required>
           <label for="age">Ich bin mindestens 18 Jahre alt.</label>
         </p>

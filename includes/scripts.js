@@ -1,11 +1,42 @@
-// disable 'back to previous page' function for userstudy
+// disable 'back to previous page' function for user study
 window.history.forward();
 
-// modal for Images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page
+// cookie handling adapted from https://stackoverflow.com/questions/14573223/set-cookie-and-get-cookie-with-javascript
+// get the value of a cookie by its name
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+// end of adaption
+
+// update conditions by clicking on 'next' button in online shop
+function updateCondition() {
+  if (getCookie("currentcondition") == 1) {
+    document.cookie = "currentcondition=2";
+  } else if (getCookie("currentcondition") == 2) {
+    document.cookie = "currentcondition=3";
+  } else if (getCookie("currentcondition") == 4) {
+    window.location.href = "logout.php";
+  }
+  location.reload(true);
+}
+
+// triggered by logout
+function deleteCookie() {
+  document.cookie = 'currentcondition=; Max-Age=0; path=/; domain=' + location.host;
+}
+
+// modal for bigger images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page
 // get the modal
 var modal = document.getElementById("modal");
 
-// get the image and insert it inside the modal - use its "alt" text as a caption
+// get the image and insert it inside the modal - use its 'alt' text as a caption
 var images = document.getElementsByClassName("productImg");
 var modalImg = document.getElementById("img");
 var captionText = document.getElementById("caption");
@@ -28,6 +59,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 }
+// end of adaption
 
 // functionality of shopping cart adapted from https://www.youtube.com/watch?v=YeFzkC2awTM
 if (document.readyState == 'loading') {
@@ -122,3 +154,4 @@ function updateCartTotal() {
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName('cart-total-price')[0].innerText = total + '€';
 }
+// end of adaption

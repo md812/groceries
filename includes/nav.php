@@ -10,8 +10,12 @@
       <li>
         <h2><?php echo "&#128100; " . htmlspecialchars($_SESSION['username']); ?></h2>
       </li>
-      <li><a href="logout.php">Abmelden</a></li>
+      <li><a href="logout.php" id="logout" onclick="deleteCookie()">Abmelden</a></li>
     </ul>
   </nav>
 
 </div>
+
+<script>
+  <?php include "includes/scripts.js" ?>
+</script>

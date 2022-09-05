@@ -1,7 +1,36 @@
 <?php
 
+global $condition;
+global $rows_user;
+
+/* Set condition parameter for user study by balanced latin square algorithm, see https://cs.uwaterloo.ca/~dmasson/tools/latin_square/
+    A: No Scores
+    B: Nutri- & Eco-Score
+    C: "Scale-Score"
+*/
+$condition = $_SESSION['condition1'];
+setcookie("currentcondition", 1, time() + (86400 * 30), "/");
+if ($_COOKIE['currentcondition'] == 1) {
+    $condition = $_SESSION['condition1'];
+    setcookie("currentcondition", 2, time() + (86400 * 30), "/");
+} else if ($_COOKIE['currentcondition'] == 2) {
+    $condition = $_SESSION['condition2'];
+    setcookie("currentcondition", 3, time() + (86400 * 30), "/");
+} else if ($_COOKIE['currentcondition'] == 3) {
+    $condition = $_SESSION['condition3'];
+    setcookie("currentcondition", 4, time() + (86400 * 30), "/");
+} // logout and delete cookie, if all conditions were used
+else if ($_COOKIE['currentcondition'] == 4) {
+    setcookie("currentcondition", "", time() - 3600);
+    echo '<script>',
+    'deleteCookie();',
+    '</script>';
+    header('Location: logout.php');
+}
+
 // choose the correct picture for Nutri-Score of product
-function printNutriscore($nutri, $rows) {
+function printNutriscore($nutri, $rows)
+{
     if ($rows[$nutri]['nutriscore_grade'] == 'a') {
         return "../images/scores/nutriscore-a.svg";
     } else if ($rows[$nutri]['nutriscore_grade'] == 'b') {
@@ -18,7 +47,8 @@ function printNutriscore($nutri, $rows) {
 }
 
 // choose the correct picture for Eco-Score of product
-function printEcoscore($eco, $rows) {
+function printEcoscore($eco, $rows)
+{
     if ($rows[$eco]['ecoscore_grade'] == 'a') {
         return "../images/scores/ecoscore-a.svg";
     } else if ($rows[$eco]['ecoscore_grade'] == 'b') {
@@ -35,7 +65,8 @@ function printEcoscore($eco, $rows) {
 }
 
 // choose the correct picture for Scale-Score of product
-function printScalescore($scale, $rows) {
+function printScalescore($scale, $rows)
+{
     if ($rows[$scale]['nutriscore_grade'] == 'a' && $rows[$scale]['ecoscore_grade'] == 'a') {
         return "../images/scores/scalescore-a_nutri-a_eco-a.svg";
     } else if ($rows[$scale]['nutriscore_grade'] == 'a' && $rows[$scale]['ecoscore_grade'] == 'b') {

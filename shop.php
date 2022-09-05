@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+// hide potential error messages, they are not needed
+error_reporting(0);
+
 // redirect not logged in user to index.php in case they want to reach this page by entering URL
 if (!isset($_SESSION['login'])) {
   header("Location:/index.php");
@@ -17,34 +20,9 @@ if (!isset($_SESSION['login'])) {
 </head>
 
 <?php
-// required for functions printNutriscore(), printEcoscore() and printSclescore(); called for all products
-require_once('includes/conditions.php');
-
 try {
-
-  /* Set condition parameter for user study
-        A: No Scores
-        B: Nutri- & Eco-Score
-        C: "Scale-Score"
-  */
-  $condition = "A";
-  if (isset($_POST["condition"])) {
-    $select = $_POST["condition"];
-    switch ($select) {
-      case "A":
-        $condition = "A";
-        break;
-      case "B":
-        $condition = "B";
-        break;
-      case "C":
-        $condition = "C";
-        break;
-      default:
-        $condition = "A";
-        break;
-    }
-  }
+  // required for functions printNutriscore(), printEcoscore(), printSclescore() and balanced latin square algorithm
+  require_once('includes/conditions.php');
 
   // Connect to DB
   $db = new PDO('sqlite:db/database.db');
@@ -80,7 +58,8 @@ try {
 }
 ?>
 
-<body>
+<!-- disable [F5] for reloading page by mistake, this would influence the conditions, adapted from https://www.c-sharpcorner.com/blogs/disable-f5-key-button-and-browser-refresh -->
+<body onkeydown="return (event.keyCode != 116)">
 
   <div class="container">
     <?php include "includes/nav.php" ?>
@@ -88,17 +67,6 @@ try {
 
   <!-- display 12 products -->
   <h1 class="center">Online-Shop</h1><br>
-  <div class="center">
-    <label id="condition-label" for="condition">Condition: </label>
-    <form method="POST">
-      <select id="condition" name="condition" onchange="this.form.submit()">
-        <option value="" selected></option>
-        <option value="A">A</option>
-        <option value="B">B</option>
-        <option value="C">C</option>
-      </select>
-    </form>
-  </div>
 
   <section class="container content-section small-container">
     <h1 class="section-header category">Cerealien</h1>
@@ -240,6 +208,10 @@ try {
       <span class="cart-total-price">0€</span>
     </div>
   </section>
+
+  <div class="center">
+    <button class="btn" id="updatecondition" type="button" onclick="updateCondition()">Weiter &#8594;</button>
+  </div>
 
   <?php include "includes/modal.php" ?>
 
