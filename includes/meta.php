@@ -1,3 +1,4 @@
+<!-- meta information for including in every page header -->
 <meta charset="UTF-8">
 <meta name="description" content="Online-Shop für Lebensmittel">
 <meta name="author" content="Marco Druschba">

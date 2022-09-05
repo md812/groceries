@@ -8,6 +8,11 @@ error_reporting(0);
 if (!isset($_SESSION['login'])) {
   header("Location:/index.php");
 }
+
+// required for functions printNutriscore(), printEcoscore(), printScalescore() and balanced latin square algorithm
+require_once('includes/conditions.php');
+
+setCondition();
 ?>
 
 <!DOCTYPE html>
@@ -21,8 +26,6 @@ if (!isset($_SESSION['login'])) {
 
 <?php
 try {
-  // required for functions printNutriscore(), printEcoscore(), printSclescore() and balanced latin square algorithm
-  require_once('includes/conditions.php');
 
   // Connect to DB
   $db = new PDO('sqlite:db/database.db');
@@ -59,6 +62,7 @@ try {
 ?>
 
 <!-- disable [F5] for reloading page by mistake, this would influence the conditions, adapted from https://www.c-sharpcorner.com/blogs/disable-f5-key-button-and-browser-refresh -->
+
 <body onkeydown="return (event.keyCode != 116)">
 
   <div class="container">
@@ -68,15 +72,18 @@ try {
   <!-- display 12 products -->
   <h1 class="center">Online-Shop</h1><br>
 
+  <!-- new section: cereal products -->
   <section class="container content-section small-container">
     <h1 class="section-header category">Cerealien</h1>
     <div class="shop-items row">
       <?php
+      // set variables
       $numberOfProducts = 12;
       $nutridescr = 'Der Nutri-Score ist eine 5-stufige Lebensmittelkennzeichnung, welche die Nährwerte von Produkten einer Kategorie vergleichbar machen soll.';
       $ecodescr = 'Der Eco-Score ist eine 5-stufige Lebensmittelkennzeichnung, welche die Nachhaltigkeit von Produkten bewerten soll.';
       $scaledescr = 'Der Scale-Score ist eine Lebensmittelkennzeichnung, welche die Nutri- und Eco-Score-Bewertung von Produkten betrachtet und zu einer kombinierenden Bewertung zusammenfügt. Der Nutri-Score wird dabei etwas höher gewertet als der Eco-Score.';
 
+      // generate products based on values of DB
       for ($i = 0; $i < $numberOfProducts; $i++) {
         print "
         <div class='col-4'>
@@ -109,16 +116,18 @@ try {
     </div>
   </section>
 
+  <!-- new section: peanutbutter products -->
   <section class="container content-section small-container">
     <h1 class="section-header">Erdnussbutter & -mus</h1>
     <div class="shop-items row">
       <?php
-
+      // set variables
       $numberOfProducts = 12;
       $nutridescr = 'Der Nutri-Score ist eine 5-stufige Lebensmittelkennzeichnung, welche die Nährwerte von Produkten einer Kategorie vergleichbar machen soll.';
       $ecodescr = 'Der Eco-Score ist eine 5-stufige Lebensmittelkennzeichnung, welche die Nachhaltigkeit von Produkten bewerten soll.';
       $scaledescr = 'Der Scale-Score ist eine Lebensmittelkennzeichnung, welche die Nutri- und Eco-Score-Bewertung von Produkten betrachtet und zu einer kombinierenden Bewertung zusammenfügt. Der Nutri-Score wird dabei etwas höher gewertet als der Eco-Score.';
 
+      // generate products based on values of DB
       for ($i = 0; $i < $numberOfProducts; $i++) {
         print "
         <div class='col-4'>
@@ -151,16 +160,18 @@ try {
     </div>
   </section>
 
+  <!-- new section: milk products -->
   <section class="container content-section small-container">
     <h1 class="section-header">Milch & -ersatz</h1>
     <div class="shop-items row">
       <?php
-
+      // set variables
       $numberOfProducts = 12;
       $nutridescr = 'Der Nutri-Score ist eine 5-stufige Lebensmittelkennzeichnung, welche die Nährwerte von Produkten einer Kategorie vergleichbar machen soll.';
       $ecodescr = 'Der Eco-Score ist eine 5-stufige Lebensmittelkennzeichnung, welche die Nachhaltigkeit von Produkten bewerten soll.';
       $scaledescr = 'Der Scale-Score ist eine Lebensmittelkennzeichnung, welche die Nutri- und Eco-Score-Bewertung von Produkten betrachtet und zu einer kombinierenden Bewertung zusammenfügt. Der Nutri-Score wird dabei etwas höher gewertet als der Eco-Score.';
 
+      // generate products based on values of DB
       for ($i = 0; $i < $numberOfProducts; $i++) {
         print "
         <div class='col-4'>
@@ -209,10 +220,12 @@ try {
     </div>
   </section>
 
+  <!-- 'next page' button to show either next condition or quit user study -->
   <div class="center">
     <button class="btn" id="updatecondition" type="button" onclick="updateCondition()">Weiter &#8594;</button>
   </div>
 
+  <!-- include modal enables clicking on pictures of products and scores to enlarge them -->
   <?php include "includes/modal.php" ?>
 
   </div>

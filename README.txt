@@ -54,3 +54,4 @@ Weiterhin gibt es Unterverzeichnisse:
     - "includes" enthält ausgelagerte Dateien, welche an einigen Stellen im Code über eine entsprechende PHP-include-Anweisung eingebunden werden.
 	Dies betrifft z.B. Footer, Navbar und Meta-Informationen jeder Webseite, welche ausgelagert wurden, um eine Änderung "global" wirksam zu machen und nicht jede einzelne Webseite bei Änderungen erneut anfassen zu müssen.
 	Das Stylesheet "style.css" und das JavaScript-Skript "scripts.js" sind hier ebenfalls hinterlegt.
+    - "logs" enthält .log-Dateien, welche während der Durchführung der Studie erzeugt werden und wichtige Ereignisse festhalten. Sie sind dabei einem angemeldeten Nutzer zugeordnet.

@@ -27,10 +27,18 @@ function updateCondition() {
   location.reload(true);
 }
 
-// triggered by logout
+// triggered by logout, adapted from https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript
 function deleteCookie() {
-  document.cookie = 'currentcondition=; Max-Age=0; path=/; domain=' + location.host;
+  var cookies = document.cookie.split(";");
+
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  }
 }
+// end of adaption
 
 // modal for bigger images adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp and https://stackoverflow.com/questions/47798971/several-modal-images-on-page
 // get the modal

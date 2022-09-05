@@ -1,5 +1,6 @@
 <div class="container">
     <hr>
+    <!-- show impressum -->
     <div class="footer">
         <h1>Impressum</h1><br>
         <h2>Verantwortliche gemäß § 5 TMG</h2><br>
