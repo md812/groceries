@@ -61,7 +61,7 @@ require_once('includes/conditions.php');
         wh_log('logged in ' . $_SESSION['username']);
       } else {
         // else if login wasn't successful
-        echo "<h2 class='center error'>Fehler: Ungültige Eingabe!</h2>";
+        echo "<h2 class='center error'>Fehler: Ungültige Anmeldedaten!</h2>";
         $_SESSION['login'] = false;
       }
     }

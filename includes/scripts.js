@@ -130,6 +130,17 @@ function addItemToCart(title, price, imageSrc) {
       return;
     }
   }
+  // users can only store three products per condition in shopping cart
+  if (cartItemNames.length == 2) {
+    alert('3 verschiedene Produkte wurden ausgewählt, bitte den Button "Weiter" am Ende der Webseite anklicken!');
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+  else if (cartItemNames.length == 3) {
+    alert('3 verschiedene Produkte wurden bereits ausgewählt, bitte den Button "Weiter" am Ende der Webseite anklicken!');
+    window.scrollTo(0, document.body.scrollHeight);
+    return;
+  }
+
   var cartRowContents = `
   <div class="cart-item cart-column">
   <img class=cart-item-image" src="${imageSrc}" width="100" height="100">
@@ -159,7 +170,6 @@ function updateCartTotal() {
     total = total + (price * quantity);
   }
 
-  total = Math.round(total * 100) / 100;
-  document.getElementsByClassName('cart-total-price')[0].innerText = total + '€';
+  document.getElementsByClassName('cart-total-price')[0].innerText = total.toFixed(2) + '€';
 }
 // end of adaption

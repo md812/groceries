@@ -85,15 +85,16 @@ try {
 
       // generate products based on values of DB
       for ($i = 0; $i < $numberOfProducts; $i++) {
+        $price = sprintf('%2.2f', $rows_cereals[$i]['price']);
         print "
         <div class='col-4'>
           <img class='shop-item-image productImg' src='{$rows_cereals[$i]['picture_path']}';' alt='product-" . $i + 1 . "' title='{$rows_cereals[$i]['brand']} {$rows_cereals[$i]['product_name_de']}';'>
           <h2 class='shop-item-title'>
-            {$rows_cereals[$i]['brand']}<br>
-            {$rows_cereals[$i]['product_name_de']}
+          {$rows_cereals[$i]['brand']}
+          {$rows_cereals[$i]['product_name_de']}
           </h2>
-          <h3 class='shop-item-price'>
-              {$rows_cereals[$i]['price']}€ pro 500g
+          <h3 class='shop-item-price'>" .
+          $price . "€ pro 500g
           </h3>
           <div>";
         // show correct score, depending on current condition $condition
@@ -129,15 +130,16 @@ try {
 
       // generate products based on values of DB
       for ($i = 0; $i < $numberOfProducts; $i++) {
+        $price = sprintf('%2.2f', $rows_peanutbutter[$i]['price']);
         print "
         <div class='col-4'>
           <img class='shop-item-image productImg' src='{$rows_peanutbutter[$i]['picture_path']}';' alt='product-" . $i + 1 . "' title='{$rows_peanutbutter[$i]['brand']} {$rows_peanutbutter[$i]['product_name_de']}';'>
           <h2 class='shop-item-title'>
-            {$rows_peanutbutter[$i]['brand']}<br>
+            {$rows_peanutbutter[$i]['brand']}
             {$rows_peanutbutter[$i]['product_name_de']}
           </h2>
-          <h3 class='shop-item-price'>
-              {$rows_peanutbutter[$i]['price']}€ pro 500g
+          <h3 class='shop-item-price'>" .
+          $price . "€ pro 500g
           </h3>
           <div>";
         // show correct score, depending on current condition $condition
@@ -173,15 +175,16 @@ try {
 
       // generate products based on values of DB
       for ($i = 0; $i < $numberOfProducts; $i++) {
+        $price = sprintf('%2.2f', $rows_milk[$i]['price']);
         print "
         <div class='col-4'>
           <img class='shop-item-image productImg' src='{$rows_milk[$i]['picture_path']}';' alt='product-" . $i + 1 . "' title='{$rows_milk[$i]['brand']} {$rows_milk[$i]['product_name_de']}';'>
           <h2 class='shop-item-title'>
-            {$rows_milk[$i]['brand']}<br>
+            {$rows_milk[$i]['brand']}
             {$rows_milk[$i]['product_name_de']}
           </h2>
-          <h3 class='shop-item-price'>
-              {$rows_milk[$i]['price']}€ pro 500g
+          <h3 class='shop-item-price'>" .
+          $price . "€ pro 1l
           </h3>
           <div>";
         // show correct score, depending on current condition $condition
@@ -216,7 +219,7 @@ try {
     </div>
     <div class="cart-total">
       <strong class="cart-total-title">Gesamt</strong>
-      <span class="cart-total-price">0€</span>
+      <span class="cart-total-price">0.00€</span>
     </div>
   </section>
 
