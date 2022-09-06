@@ -141,14 +141,24 @@ function addItemToCart(title, price, imageSrc) {
     return;
   }
 
+  // adapted from https://www.youtube.com/watch?v=DULFs16I_z8
+  var z = document.getElementById("updatecondition");
+  if (cartItemNames.length <= 1) {
+    z.style.display = "none";
+  } else {
+    z.style.display = "block";
+  }
+  // end of adaption
+
   var cartRowContents = `
   <div class="cart-item cart-column">
-  <img class=cart-item-image" src="${imageSrc}" width="100" height="100">
+  <img class=cart-item-image" src="${imageSrc}" width="100" height="100" alt="product">
   <span class="cart-item-title">${title}</span>
   </div>
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
-  <input class="cart-quantity-input" type="number" value="1">
+  <label for="quantity"></label>
+  <input class="cart-quantity-input" id="quantity" type="number" value="1">
   <button class="btn btn-remove" type="button">Entfernen</button>
   </div>`;
   cartRow.innerHTML = cartRowContents;
@@ -171,5 +181,34 @@ function updateCartTotal() {
   }
 
   document.getElementsByClassName('cart-total-price')[0].innerText = total.toFixed(2) + '€';
+}
+// end of adaption
+
+// adapted from https://www.youtube.com/watch?v=DULFs16I_z8
+function toggleConsent() {
+  var x = document.getElementById("consent-form");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function toggleInformation() {
+  var y = document.getElementById("information-sheet");
+  if (y.style.display == "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "block";
+  }
+}
+
+function toggleNextButton() {
+  var z = document.getElementById("updatecondition");
+  if (z.style.display == "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "block";
+  }
 }
 // end of adaption

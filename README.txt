@@ -48,6 +48,7 @@ Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insb
 Weiterhin gibt es Unterverzeichnisse:
     - "db" enthält die Datenbank "database.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
 	Die Datenbank enthält die konkreten Produkte inkl. hinterlegter Scores. Zusätzlich sind im Unterverzeichnis "res" die aus der Open Food Facts-Datenbank (https://de.openfoodfacts.org/) exportierten Ressourcen als .csv-Dateien hinterlegt, aus welchen die Tabelle "products" der Datenbank erstellt wurde.
+    - "docs" enthält die verlinkten .pdf-Dateien (Einverständniserklärung und Teilnehmerinformationen zur Nutzerstudie).
     - "font" enthält die heruntergeladenen Ressourcen der Schriftart "Ubuntu Light".
     - "images" enthält sämtliches auf der Webpräsenz verwendetes Bildmaterial. Im Unterverzeichnis "products" sind die Produktbilder in wiederum entsprechenden Unterverzeichnissen hinterlegt.
 	Das Unterverzeichnis "scores" enthält die für jedes Produkt hinterlegten Nutri-, Eco- und "Scale"-Scores.

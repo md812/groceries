@@ -118,8 +118,9 @@ require_once('includes/conditions.php');
   </div>
 
   <div>
+  <h2 class="center">Nutzerstudie: Lebensmittelkennzeichnungen beim Online-Einkauf</h2>
     <div class="center">
-      Herzlich willkommen bei unserer Nutzerstudie! Wir freuen uns sehr über Ihre Teilnahme.<br>
+      Herzlich willkommen zu unserer Nutzerstudie! Wir freuen uns sehr über Ihre Teilnahme.<br>
       Zu Beginn dieser Studie geben wir Ihnen auf dieser Seite einige Informationen über den Ablauf.<br>
       Gleichzeitig benötigen wir Ihre Zustimmung zur Teilnahme an dieser Studie.
     </div><br>
@@ -137,17 +138,24 @@ require_once('includes/conditions.php');
         <p><input type="checkbox" id="allergies" required>
           <label for="allergies">Ich habe keine bekannten Lebensmittelallergien oder -unverträglichkeiten.</label>
         </p>
-        <p><input type="checkbox" id="questions" required>
-          <label for="questions">Es wurde mir die Möglichkeit für Rückfragen angeboten. Mir ist bekannt, dass ich jederzeit Fragen stellen kann.</label>
+        <p><input type="checkbox" id="information" required>
+          <label for="information">Ich habe die <a onclick="toggleInformation()">Nutzerinformationen zur Teilnahme an der Nutzerstudie</a> gelesen und verstanden.
+            <iframe src="docs/information_sheet.pdf#toolbar=0" id="information-sheet"></iframe>
+          </label>
         </p>
         <p><input type="checkbox" id="recording" required>
           <label for="recording">Ich bin mit der Aufzeichnung meiner Stimme und der Bildschirmansicht zu Analysezwecken einverstanden.</label>
         </p>
         <p><input type="checkbox" id="signature" required>
-          <label for="signature">Ich habe die Einverständniserklärung zur Teilnahme an der Nutzerstudie unterschrieben.</label>
+          <label for="signature">Ich habe die <a onclick="toggleConsent()">Einwilligungserklärung zur Teilnahme an der Nutzerstudie</a> gelesen und akzeptiere diese.
+            <iframe src="docs/consent_form.pdf#toolbar=0" id="consent-form"></iframe>
+          </label>
+        </p>
+        <p><input type="checkbox" id="questions" required>
+          <label for="questions">Es wurde mir die Möglichkeit für Rückfragen angeboten. Mir ist bekannt, dass ich jederzeit Fragen stellen kann.</label>
         </p><br>
         <p><input type="checkbox" id="agreed" required>
-          <label for="agreed">Ich bin mit der Durchführung der Nutzerstudie einverstanden.</label>
+          <label for="agreed">Ich erfülle alle Teilnahmevoraussetzungen und bin mit der Durchführung der Nutzerstudie einverstanden.</label>
         </p>
       </form>
     </div>
