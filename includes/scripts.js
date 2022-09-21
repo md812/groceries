@@ -25,6 +25,7 @@ function updateCondition() {
     window.location.href = "logout.php";
   }
   location.reload(true);
+  window.scrollTo(0, 0);
 }
 
 // triggered by logout, adapted from https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript
@@ -186,29 +187,29 @@ function updateCartTotal() {
 
 // adapted from https://www.youtube.com/watch?v=DULFs16I_z8
 function toggleConsent() {
-  var x = document.getElementById("consent-form");
-  if (x.style.display == "block") {
-    x.style.display = "none";
+  var consent = document.getElementById("consent-form");
+  if (consent.style.display == "block") {
+    consent.style.display = "none";
   } else {
-    x.style.display = "block";
+    consent.style.display = "block";
   }
 }
 
 function toggleInformation() {
-  var y = document.getElementById("information-sheet");
-  if (y.style.display == "block") {
-    y.style.display = "none";
+  var info = document.getElementById("information-sheet");
+  if (info.style.display == "block") {
+    info.style.display = "none";
   } else {
-    y.style.display = "block";
+    info.style.display = "block";
   }
 }
 
 function toggleNextButton() {
-  var z = document.getElementById("updatecondition");
-  if (z.style.display == "block") {
-    z.style.display = "none";
+  var next = document.getElementById("updatecondition");
+  if (next.style.display == "block") {
+    next.style.display = "none";
   } else {
-    z.style.display = "block";
+    next.style.display = "block";
   }
 }
 // end of adaption
