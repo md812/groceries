@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// hide potential error messages, they are not needed
+// hide potential error or warning messages, they are not needed
 error_reporting(0);
 
 // redirect not logged in user to index.php in case they want to reach this page by entering URL
@@ -62,7 +62,6 @@ try {
 ?>
 
 <!-- disable [F5] for reloading page by mistake, this would influence the conditions, adapted from https://www.c-sharpcorner.com/blogs/disable-f5-key-button-and-browser-refresh -->
-
 <body onkeydown="return (event.keyCode != 116)">
 
   <div class="container">
@@ -74,7 +73,7 @@ try {
 
   <!-- new section: cereal products -->
   <section class="container content-section small-container">
-    <h1 class="section-header category">Cerealien</h1>
+    <h2 class="section-header category">Cerealien</h2>
     <div class="shop-items row">
       <?php
       // set variables
@@ -88,7 +87,7 @@ try {
         $price = sprintf('%2.2f', $rows_cereals[$i]['price']);
         print "
         <div class='col-4'>
-          <img class='shop-item-image productImg' src='{$rows_cereals[$i]['picture_path']}';' alt='product-" . $i + 1 . "' title='{$rows_cereals[$i]['brand']} {$rows_cereals[$i]['product_name_de']}';'>
+          <img class='shop-item-image productImg' src='{$rows_cereals[$i]['picture_path']}' alt='product-" . $i + 1 . "' title='{$rows_cereals[$i]['brand']} {$rows_cereals[$i]['product_name_de']}'>
           <h2 class='shop-item-title'>
           {$rows_cereals[$i]['brand']}
           {$rows_cereals[$i]['product_name_de']}
@@ -119,7 +118,7 @@ try {
 
   <!-- new section: peanutbutter products -->
   <section class="container content-section small-container">
-    <h1 class="section-header">Erdnussbutter & -mus</h1>
+    <h2 class="section-header">Erdnussbutter & -mus</h2>
     <div class="shop-items row">
       <?php
       // set variables
@@ -133,7 +132,7 @@ try {
         $price = sprintf('%2.2f', $rows_peanutbutter[$i]['price']);
         print "
         <div class='col-4'>
-          <img class='shop-item-image productImg' src='{$rows_peanutbutter[$i]['picture_path']}';' alt='product-" . $i + 1 . "' title='{$rows_peanutbutter[$i]['brand']} {$rows_peanutbutter[$i]['product_name_de']}';'>
+          <img class='shop-item-image productImg' src='{$rows_peanutbutter[$i]['picture_path']}' alt='product-" . $i + 1 . "' title='{$rows_peanutbutter[$i]['brand']} {$rows_peanutbutter[$i]['product_name_de']}'>
           <h2 class='shop-item-title'>
             {$rows_peanutbutter[$i]['brand']}
             {$rows_peanutbutter[$i]['product_name_de']}
@@ -164,7 +163,7 @@ try {
 
   <!-- new section: milk products -->
   <section class="container content-section small-container">
-    <h1 class="section-header">Milch & -ersatz</h1>
+    <h2 class="section-header">Milch & -ersatz</h2>
     <div class="shop-items row">
       <?php
       // set variables
@@ -178,7 +177,7 @@ try {
         $price = sprintf('%2.2f', $rows_milk[$i]['price']);
         print "
         <div class='col-4'>
-          <img class='shop-item-image productImg' src='{$rows_milk[$i]['picture_path']}';' alt='product-" . $i + 1 . "' title='{$rows_milk[$i]['brand']} {$rows_milk[$i]['product_name_de']}';'>
+          <img class='shop-item-image productImg' src='{$rows_milk[$i]['picture_path']}' alt='product-" . $i + 1 . "' title='{$rows_milk[$i]['brand']} {$rows_milk[$i]['product_name_de']}'>
           <h2 class='shop-item-title'>
             {$rows_milk[$i]['brand']}
             {$rows_milk[$i]['product_name_de']}
@@ -208,8 +207,8 @@ try {
   </section>
 
   <!-- shopping cart adapted from https://www.youtube.com/watch?v=YeFzkC2awTM -->
-  <h1 class="center">Einkaufswagen</h1>
   <section class="container content-section">
+    <h2 class="center">Einkaufswagen</h2>
     <div class="cart-row">
       <span class="cart-item cart-header cart-column">Produkt</span>
       <span class="cart-price cart-header cart-column">Preis</span>
@@ -231,7 +230,6 @@ try {
   <!-- include modal enables clicking on pictures of products and scores to enlarge them -->
   <?php include "includes/modal.php" ?>
 
-  </div>
   <!-- end of products -->
 
   <!-- footer -->

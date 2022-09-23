@@ -2,9 +2,9 @@
 <div class="navbar">
   <!-- logo, image source: picture by Prawny on Pixabay (https://pixabay.com/de/users/prawny-162579/) -->
   <div class="logo">
-    <p><img src="images/logo.png" id="logo" alt="groceries-logo">
-    <h1>Groceries</h1>
-    </p>
+    <div><img src="images/logo.png" id="logo" alt="groceries-logo">
+      <h1>Groceries</h1>
+    </div>
   </div>
   <nav>
     <ul id="MenuItems">

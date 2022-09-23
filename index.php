@@ -2,7 +2,7 @@
 // start session
 session_start();
 
-// hide potential error messages, they are not needed
+// hide potential error or warning messages, they are not needed
 error_reporting(0);
 
 // required for logging
@@ -74,11 +74,10 @@ require_once('includes/conditions.php');
       <h1>Anmeldung zur Nutzerstudie</h1><br>
     </div>";
 
-      $url = $_SERVER['SCRIPT_NAME'];
   ?>
       <!-- login mask -->
       <div class="center login">
-        <form id="form-login" action="<?php $url ?>" method="POST">
+        <form id="form-login" method="POST">
           <label for="username">Benutzername:</label><br>
           <input type="text" id="username" name="username" value="" required><br>
           <label for="password">Kennwort:</label><br>
@@ -86,7 +85,7 @@ require_once('includes/conditions.php');
         </form>
       </div>
       <div class="center">
-        <input href="index.php" type="submit" form="form-login" class="btn" value="Anmelden &#8594;">
+        <input type="submit" form="form-login" class="btn" value="Anmelden &#8594;">
       </div>
 
       <!-- footer -->
@@ -118,7 +117,7 @@ require_once('includes/conditions.php');
   </div>
 
   <div>
-  <h2 class="center">Nutzerstudie: Lebensmittelkennzeichnungen beim Online-Einkauf</h2>
+    <h2 class="center">Nutzerstudie: Lebensmittelkennzeichnungen beim Online-Einkauf</h2>
     <div class="center">
       Herzlich willkommen zu unserer Nutzerstudie! Wir freuen uns sehr über Ihre Teilnahme.<br>
       Zu Beginn dieser Studie geben wir Ihnen auf dieser Seite einige Informationen über den Ablauf.<br>

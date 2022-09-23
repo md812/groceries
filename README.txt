@@ -1,6 +1,16 @@
 [README] GROCERIES: ONLINE-SHOP
 ===============================
 
+[ZUGANGSDATEN ZUM ONLINE-SHOP]
+Benutzername: User1
+Kennwort: User1
+
+Dies gilt analog für alle anderen hinterlegten Konten (User1, User2, ..., User12).
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 [XAMPP-KONFIGURATION & INSTALLATION]
 Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP konfigurierten Apache-Servers. An dieser Stelle erfolgt hierzu eine Kurzanleitung:
 
@@ -9,20 +19,20 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
 
     0. Download von XAMPP über https://www.apachefriends.org/de/index.html.
     1. Abgegebenes "groceries"-Verzeichnis an gewünschter Stelle speichern.
-        1.1 Möglichkeit 1: Dateien des "groceries"-Verzeichnisses direkt im "htdocs"-Verzeichnis (z.B. "C:/xampp/htdocs/groceries") speichern.
+        1.1 Möglichkeit 1: Dateien des "groceries"-Verzeichnisses direkt im "htdocs"-Verzeichnis von XAMPP (z.B. "C:/xampp/htdocs/groceries") speichern.
         1.2 Möglichkeit 2: Alternativen Pfad nach eigenem Wunsch (z.B. "C:/Studium/Bachelorarbeit/groceries") verwenden.
     2. Starten des nun installierten XAMPP Control Panel mit Administratorrechten.
 
     # HINWEIS 1:
-    Wurde in Schritt 1. das "groceries"-Verzeichnis im "htdocs"-Verzeichnis von XAMPP (z.B. "C:/xampp/htdocs") hinterlegt, kann Schritt 3. übersprungen werden. Ansonsten ist die Konfiguration des korrekten alternativen Verzeichnispfads (Schritt 3.) nötig.
+    Wurde in Schritt 1. das "groceries"-Verzeichnis im "htdocs"-Verzeichnis von XAMPP (z.B. "C:/xampp/htdocs") hinterlegt, kann Schritt 3. übersprungen werden. Ansonsten ist die Konfiguration des korrekten alternativen Verzeichnispfades (Schritt 3.) nötig.
 
     3. Korrekten Verzeichnispfad konfigurieren:
-        3.1 "Konfig"-Button des Apache-Servers im Control Panel anklicken.
+        3.1 "Konfig"-Button des Apache-Moduls im Control Panel anklicken.
         3.2 "Apache (httpd.conf)" auswählen.
         3.3 In der sich öffnenden "httpd.conf"-Datei die Angabe der Verzeichniswurzel suchen ([STRG] + [F], "DocumentRoot" eingeben). Zwei Zeilen, beginnend mit "DocumentRoot" bzw. "<Directory" sind inkl. Pfadangabe sichtbar.
         3.4 Bei beiden Pfadangaben den Pfad zum "groceries"-Verzeichnis angeben (z.B. "C:/Studium/Bachelorarbeit/groceries").
         3.5 "httpd.conf"-Datei speichern und Datei schließen.
-    4. "Starten"-Button des Apache-Servers im Control Panel anklicken.
+    4. "Starten"-Button des Apache-Moduls im Control Panel anklicken.
     5. Im Webbrowser http://localhost/index.php eingeben. Die Startseite von Groceries, "index.php" wird aufgerufen. Ab hier kann sich mithilfe der Website durch die einzelnen Seiten navigiert werden.
 
     # HINWEIS 2:
@@ -36,7 +46,7 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
         5. Seite neu laden ([F5]).
 
     # HINWEIS 3:
-    Für den erneuten Aufruf der Webpräsenz von Groceries sind nach der initialen Konfiguration nur noch die Schritte 2., 4. und 5. nötig, sofern der Apache-Server nach der letzten Verwendung wieder gestoppt wurde. Ansonsten ist nur Schritt 5. nötig, da der Apache-Server immer noch läuft.
+    Für den erneuten Aufruf der Webpräsenz von Groceries sind nach der initialen Konfiguration nur noch die Schritte 2., 4. und 5. nötig, sofern das Apache-Modul nach der letzten Verwendung wieder gestoppt wurde. Ansonsten ist nur Schritt 5. nötig, da das Apache-Modul immer noch läuft.
 
     # HINWEIS 4:
     Für die vollständige Funktionalität des Online-Shops ist die Aktivierung von JavaScript zwingend erforderlich!

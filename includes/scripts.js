@@ -54,11 +54,11 @@ var captionText = document.getElementById("caption");
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
   // and attach our click listener for this image.
-  img.onclick = function (evt) {
+  img.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.title;
-  }
+  };
 }
 
 // get the <span> element that closes the modal
@@ -67,7 +67,7 @@ var span = document.getElementsByClassName("close")[0];
 // when the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
-}
+};
 // end of adaption
 
 // functionality of shopping cart adapted from https://www.youtube.com/watch?v=YeFzkC2awTM
@@ -80,19 +80,19 @@ if (document.readyState == 'loading') {
 function ready() {
   var removeCartItemButtons = document.getElementsByClassName('btn-danger');
   for (var i = 0; i < removeCartItemButtons.length; i++) {
-    var button = removeCartItemButtons[i];
-    button.addEventListener('click', removeCartItem)
+    var buttonRemove = removeCartItemButtons[i];
+    buttonRemove.addEventListener('click', removeCartItem);
   }
 
   var quantityInputs = document.getElementsByClassName('cart-quantity-input');
-  for (var i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i];
+  for (var j = 0; j < quantityInputs.length; j++) {
+    var input = quantityInputs[j];
     input.addEventListener('change', quantityChanged);
   }
   var addToCartButtons = document.getElementsByClassName('shop-item-button');
-  for (var i = 0; i < addToCartButtons.length; i++) {
-    var button = addToCartButtons[i];
-    button.addEventListener('click', addToCartClicked);
+  for (var k = 0; k < addToCartButtons.length; k++) {
+    var buttonAdd = addToCartButtons[k];
+    buttonAdd.addEventListener('click', addToCartClicked);
   }
 }
 
@@ -158,7 +158,6 @@ function addItemToCart(title, price, imageSrc) {
   </div>
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
-  <label for="quantity"></label>
   <input class="cart-quantity-input" id="quantity" type="number" value="1">
   <button class="btn btn-remove" type="button">Entfernen</button>
   </div>`;
