@@ -17,6 +17,7 @@ body {
     font-family: 'ubuntulight';
 }
 
+/* style of navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -60,15 +61,6 @@ nav ul li a {
     width: 125px;
 }
 
-#user {
-    width: 25px;
-}
-
-.error {
-    color: #AD1414;
-    margin-top: 25px;
-}
-
 a:hover {
     color: #135B8B;
 }
@@ -85,28 +77,6 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
-
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 0;
-}
-
-.col-2 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-
-.col-2 .btn {
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
 }
 
 .btn {
@@ -142,7 +112,7 @@ button {
     margin-bottom: 50px;
 }
 
-.col-4 {
+.col-3 {
     padding-top: 20px;
     margin-bottom: 50px;
     transition: transform 0.5s;
@@ -152,11 +122,11 @@ button {
     width: 400px;
 }
 
-.col-4 img {
+.col-3 img {
     height: 100%;
 }
 
-.col-4 .score {
+.col-3 .score {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -165,14 +135,14 @@ button {
     max-width: 40%;
 }
 
-.col-4 h2 {
+.col-3 h2 {
     margin-top: 10px;
     color: #000;
     font-weight: normal;
     font-size: 18px;
 }
 
-.col-4 h3 {
+.col-3 h3 {
     font-size: 18px;
     font-weight: bold;
     color: #555;
@@ -180,7 +150,7 @@ button {
     margin-bottom: 10px;
 }
 
-.col-4:hover {
+.col-3:hover {
     transform: translateY(-5px);
 }
 
@@ -241,18 +211,7 @@ hr {
     margin-top: 20px;
 }
 
-.menu-icon {
-    width: 28px;
-    margin-left: 20px;
-    display: none;
-}
-
 /* all products */
-.row-2 {
-    justify-content: space-between;
-    margin: 100px auto 50px;
-}
-
 select {
     border: 1px solid #135B8B;
     padding: 5px;
@@ -262,27 +221,7 @@ select:focus {
     outline: none;
 }
 
-.page-btn {
-    margin: 0 auto 80px;
-}
-
-.page-btn span {
-    display: inline-block;
-    border: 1px solid #135B8B;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-}
-
-.page-btn span:hover {
-    background: #000;
-    color: #fff;
-}
-
-/* source for Impressum */
+/* impressum */
 #source {
     font-weight: bold;
     margin-top: 10px;
@@ -304,6 +243,7 @@ p a:hover {
     color: #103756;
 }
 
+/* embedded pdf documents */
 iframe {
     display: none;
     width: 100%;
@@ -438,22 +378,7 @@ h1 {
     cursor: pointer;
 }
 
-/* media query for less than 600px screen size */
-@media only screen and (max-width: 600px) {
-    .row {
-        text-align: center;
-    }
-
-    .col-2,
-    .col-3,
-    .col-4 {
-        flex-basis: 100%;
-    }
-
-    .modal-content {
-        width: 100%;
-    }
-}
+/* end of adaption */
 
 /* css of shopping cart adapted from https://www.youtube.com/watch?v=YeFzkC2awTM */
 .shop-item {
@@ -482,13 +407,6 @@ h1 {
 
     align-items: center;
     padding: 5px;
-}
-
-.shop-item-scores {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin: 10px;
 }
 
 .shop-item-price {
@@ -598,6 +516,8 @@ h1 {
     font-size: 1.1em;
 }
 
+/* end of adaption */
+
 .section-header {
     margin-bottom: 25px;
 }
@@ -615,6 +535,26 @@ h1 {
     background-color: #CC4C4C;
 }
 
+.error {
+    color: #AD1414;
+    margin-top: 25px;
+}
+
 #updatecondition {
     display: none;
+}
+
+/* media query for less than 600px screen size */
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-3 {
+        flex-basis: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
 }

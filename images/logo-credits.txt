@@ -1,0 +1,5 @@
+All image sources for logo pictures adapted from:
+
+#1 uol_logo.svg - https://uol.de/typo3conf/ext/unioltemplate/Resources/Public/Assets/Images/UOL-Logo.svg
+#2 logo.png - https://pixabay.com/de/illustrations/tasche-einkaufen-lebensmittel-obst-1105587/
+#3 favicon.ico - created using source of #2.

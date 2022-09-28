@@ -28,7 +28,7 @@ setCondition();
 try {
 
   // Connect to DB
-  $db = new PDO('sqlite:db/database.db');
+  $db = new PDO('sqlite:db/webshop.db');
 
   // Select 12 cereals entries of DB, depending on current condition $condition
   $sql_cereals = "SELECT DISTINCT * FROM products WHERE category = 'Cerealien' AND condition = '$condition' LIMIT 12";
@@ -62,6 +62,7 @@ try {
 ?>
 
 <!-- disable [F5] for reloading page by mistake, this would influence the conditions, adapted from https://www.c-sharpcorner.com/blogs/disable-f5-key-button-and-browser-refresh -->
+
 <body onkeydown="return (event.keyCode != 116)">
 
   <div class="container">
@@ -86,7 +87,7 @@ try {
       for ($i = 0; $i < $numberOfProducts; $i++) {
         $price = sprintf('%2.2f', $rows_cereals[$i]['price']);
         print "
-        <div class='col-4'>
+        <div class='col-3'>
           <img class='shop-item-image productImg' src='{$rows_cereals[$i]['picture_path']}' alt='product-" . $i + 1 . "' title='{$rows_cereals[$i]['brand']} {$rows_cereals[$i]['product_name_de']}'>
           <h2 class='shop-item-title'>
           {$rows_cereals[$i]['brand']}
@@ -131,7 +132,7 @@ try {
       for ($i = 0; $i < $numberOfProducts; $i++) {
         $price = sprintf('%2.2f', $rows_peanutbutter[$i]['price']);
         print "
-        <div class='col-4'>
+        <div class='col-3'>
           <img class='shop-item-image productImg' src='{$rows_peanutbutter[$i]['picture_path']}' alt='product-" . $i + 1 . "' title='{$rows_peanutbutter[$i]['brand']} {$rows_peanutbutter[$i]['product_name_de']}'>
           <h2 class='shop-item-title'>
             {$rows_peanutbutter[$i]['brand']}
@@ -176,7 +177,7 @@ try {
       for ($i = 0; $i < $numberOfProducts; $i++) {
         $price = sprintf('%2.2f', $rows_milk[$i]['price']);
         print "
-        <div class='col-4'>
+        <div class='col-3'>
           <img class='shop-item-image productImg' src='{$rows_milk[$i]['picture_path']}' alt='product-" . $i + 1 . "' title='{$rows_milk[$i]['brand']} {$rows_milk[$i]['product_name_de']}'>
           <h2 class='shop-item-title'>
             {$rows_milk[$i]['brand']}

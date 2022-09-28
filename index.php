@@ -33,7 +33,7 @@ require_once('includes/conditions.php');
     ) {
 
       // connect to DB
-      $db = new PDO('sqlite:db/database.db');
+      $db = new PDO('sqlite:db/webshop.db');
 
       $username = $_POST['username'];
       $password = $_POST['password'];
@@ -70,7 +70,7 @@ require_once('includes/conditions.php');
     if (!isset($_SESSION['login']) || $_SESSION['login'] == false) {
       // image source: https://uol.de/corporate-design/uni-logo
       echo "<div class='login'>
-      <img src='images/uol_logo.jpg' alt='uni-oldenburg-logo' class='uol-logo'>
+      <img src='images/uol_logo.svg' alt='uni-oldenburg-logo' class='uol-logo'>
       <h1>Anmeldung zur Nutzerstudie</h1><br>
     </div>";
 
@@ -113,7 +113,7 @@ require_once('includes/conditions.php');
 
   <!-- image source: https://uol.de/corporate-design/uni-logo -->
   <div>
-    <img src="images/uol_logo.jpg" alt="uni-oldenburg-logo" class="uol-logo">
+    <img src="images/uol_logo.svg" alt="uni-oldenburg-logo" class="uol-logo">
   </div>
 
   <div>

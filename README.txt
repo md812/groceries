@@ -69,7 +69,7 @@ Der Aufruf der Webpräsenz von "Groceries" funktioniert mithilfe eines via XAMPP
 Im "groceries"-Verzeichnis liegen die einzelnen Webseiten als .php-Dateien. Insbesondere ist hier die "index.php"-Datei, welche die Startseite enthält, die shop.php-Datei, welche den Online-Shop enthält sowie diese README-Datei, relevant.
 
 Weiterhin gibt es Unterverzeichnisse:
-    - "db" enthält die Datenbank "database.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
+    - "db" enthält die Datenbank "webshop.db", auf welche durch die Verwendung des Online-Shops an einigen Stellen im Code Zugriff erfolgt.
 	Die Datenbank enthält die konkreten Produkte inkl. hinterlegter Scores. Zusätzlich sind im Unterverzeichnis "res" die aus der Open Food Facts-Datenbank (https://de.openfoodfacts.org/) exportierten Ressourcen als .csv-Dateien hinterlegt, aus welchen die Tabelle "products" der Datenbank erstellt wurde.
     - "docs" enthält die verlinkten .pdf-Dateien (Einverständniserklärung und Teilnehmerinformationen zur Nutzerstudie).
     - "font" enthält die heruntergeladenen Ressourcen der Schriftart "Ubuntu Light".
@@ -79,6 +79,3 @@ Weiterhin gibt es Unterverzeichnisse:
 	Dies betrifft z.B. Footer, Navbar und Meta-Informationen jeder Webseite, welche ausgelagert wurden, um eine Änderung "global" wirksam zu machen und nicht jede einzelne Webseite bei Änderungen erneut anfassen zu müssen.
 	Das Stylesheet "style.css" und das JavaScript-Skript "scripts.js" sind hier ebenfalls hinterlegt.
     - "logs" enthält .log-Dateien, welche während der Durchführung der Studie (beim Anmelden eines Users) erzeugt werden und per Zeitstempel Ereignisse festhalten. Sie sind dabei einem angemeldeten Nutzer zugeordnet.
-
-    # HINWEIS 6:
-    Bei Abgabe dieses Projektes werden bereits zwölf .log-Dateien im logs-Ordner enthalten sein. Diese entsprechen den Dateien, welche bei der Durchführung der Nutzerstudie generiert wurden. Bei einem erneuten Einloggen im System werden diese .log-Dateien der einzelnen User aber nicht überschrieben, da im Dateinamen zusätzlich das aktuelle Datum angegeben ist. Wird sich mehrfach am selben Tag eingeloggt, wird die Datei des jeweiligen Tages erweitert und nicht überschrieben. Somit werden alle Anmeldevorgänge aufgezeichnet und es besteht nicht die Gefahr des Verlustes der .log-Dateien.
