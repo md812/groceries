@@ -24,5 +24,5 @@
     </div>
     <hr>
 
-    <p id="copyright">Groceries &#xA9; 2022 - Marco Druschba</p>
+    <p id="copyright">&#xA9; 2022-2023 | Groceries | Marco Druschba</p>
 </div>
