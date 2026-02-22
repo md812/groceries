@@ -17,7 +17,7 @@ require_once('includes/conditions.php');
 
 <head>
   <?php include "includes/meta.php" ?>
-  <title>Groceries | Start</title>
+  <title lang="en">Groceries | Start</title>
 </head>
 
 <body>
@@ -69,8 +69,8 @@ require_once('includes/conditions.php');
     // if user is not logged in, show login again
     if (!isset($_SESSION['login']) || $_SESSION['login'] == false) {
       // image source: https://uol.de/corporate-design/uni-logo
-      echo "<div class='login'>
-      <img src='images/uol_logo.svg' alt='uni-oldenburg-logo' class='uol-logo'>
+      echo "<main><div class='login'>
+      <a href='https://uol.de/' target='_blank' rel='noopener noreferrer' class='logo-link'><img src='images/uol_logo.svg' alt='Logo der Carl von Ossietzky Universität Oldenburg' class='uol-logo'></a>
       <h1>Anmeldung zur Nutzerstudie</h1><br>
     </div>";
 
@@ -87,11 +87,10 @@ require_once('includes/conditions.php');
       <div class="center">
         <input type="submit" form="form-login" class="btn" value="Anmelden &#8594;">
       </div>
+      </main>
 
       <!-- footer -->
-      <div class="footer">
-        <?php include "includes/footer.php" ?>
-      </div>
+      <?php include "includes/footer.php" ?>
 
   <?php
       // end program because user is not logged in yet
@@ -105,72 +104,75 @@ require_once('includes/conditions.php');
   <!-- end of adaption -->
 
   <!-- this part only gets visible is user was logged in successfully -->
-  <div class="container">
+  <header class="container">
     <?php include "includes/nav.php" ?>
-  </div>
+  </header>
 
-  <h1>Herzlich willkommen!</h1>
+  <main>
+    <h1>Herzlich willkommen zur Nutzerstudie!</h1>
 
-  <!-- image source: https://uol.de/corporate-design/uni-logo -->
-  <div>
-    <img src="images/uol_logo.svg" alt="uni-oldenburg-logo" class="uol-logo">
-  </div>
-
-  <div>
-    <h2 class="center">Nutzerstudie: Lebensmittelkennzeichnungen beim Online-Einkauf</h2>
-    <div class="center">
-      Herzlich willkommen zu unserer Nutzerstudie! Wir freuen uns sehr über Ihre Teilnahme.<br>
-      Zu Beginn dieser Studie geben wir Ihnen auf dieser Seite einige Informationen über den Ablauf.<br>
-      Gleichzeitig benötigen wir Ihre Zustimmung zur Teilnahme an dieser Studie.
-    </div><br>
-
-    <div class="center">
-      <b>Um fortfahren zu können, müssen Sie das Häkchen bei allen folgenden Optionen setzen.</b>
+    <!-- image source: https://uol.de/corporate-design/uni-logo -->
+    <div>
+      <a href='https://uol.de/' target='_blank' rel='noopener noreferrer' class='logo-link'><img src='images/uol_logo.svg' alt='Logo der Carl von Ossietzky Universität Oldenburg' class='uol-logo'></a>
     </div>
 
-    <!-- show agreement formular, redirect to online shop if all fields were set -->
-    <div class="center">
-      <form id="form-checklist" action="shop.php" autocomplete="off">
-        <p><input type="checkbox" id="age" required>
-          <label for="age">Ich bin mindestens 18 Jahre alt.</label>
-        </p>
-        <p><input type="checkbox" id="allergies" required>
-          <label for="allergies">Ich habe keine bekannten Lebensmittelallergien oder -unverträglichkeiten.</label>
-        </p>
-        <p><input type="checkbox" id="information" required>
-          <label for="information">Ich habe die <a onclick="toggleInformation()">Nutzerinformationen zur Teilnahme an der Nutzerstudie</a> gelesen und verstanden.
-            <iframe src="docs/information_sheet.pdf#toolbar=0" id="information-sheet"></iframe>
-          </label>
-        </p>
-        <p><input type="checkbox" id="recording" required>
-          <label for="recording">Ich bin mit der Aufzeichnung meiner Stimme und der Bildschirmansicht zu Analysezwecken einverstanden.</label>
-        </p>
-        <p><input type="checkbox" id="signature" required>
-          <label for="signature">Ich habe die <a onclick="toggleConsent()">Einwilligungserklärung zur Teilnahme an der Nutzerstudie</a> gelesen und akzeptiere diese.
-            <iframe src="docs/consent_form.pdf#toolbar=0" id="consent-form"></iframe>
-          </label>
-        </p>
-        <p><input type="checkbox" id="questions" required>
-          <label for="questions">Es wurde mir die Möglichkeit für Rückfragen angeboten. Mir ist bekannt, dass ich jederzeit Fragen stellen kann.</label>
-        </p><br>
-        <p><input type="checkbox" id="agreed" required>
-          <label for="agreed">Ich erfülle alle Teilnahmevoraussetzungen und bin mit der Durchführung der Nutzerstudie einverstanden.</label>
-        </p>
-      </form>
-    </div>
+    <div>
+      <h2 class="center">Thema: Lebensmittelkennzeichnungen beim Online-Einkauf</h2>
+      <div class="center">
+        Herzlich willkommen zu unserer Nutzerstudie! Wir freuen uns sehr über Ihre Teilnahme.<br>
+        Zu Beginn dieser Studie geben wir Ihnen auf dieser Seite einige Informationen über den Ablauf.<br>
+        Gleichzeitig benötigen wir Ihre Zustimmung zur Teilnahme an dieser Studie.
+      </div><br>
 
-    <div class="center">
-      <input href="shop.php" type="submit" form="form-checklist" class="btn" value="Zum Online-Shop &#8594;">
+      <div class="center">
+        <b>Um fortfahren zu können, müssen Sie das Häkchen bei allen folgenden Optionen setzen.</b>
+      </div>
+
+      <!-- show agreement formular, redirect to online shop if all fields were set -->
+      <div class="center">
+        <form id="form-checklist" action="shop.php" autocomplete="off">
+          <p><input type="checkbox" id="age" required>
+            <label for="age">Ich bin mindestens 18 Jahre alt.</label>
+          </p>
+          <p><input type="checkbox" id="allergies" required>
+            <label for="allergies">Ich habe keine bekannten Lebensmittelallergien oder -unverträglichkeiten.</label>
+          </p>
+          <p><input type="checkbox" id="information" required>
+            <label for="information">Ich habe die <a onclick="toggleInformation()">Nutzerinformationen zur Teilnahme an der Nutzerstudie</a> gelesen und verstanden.
+              <iframe src="docs/information_sheet.pdf#toolbar=0" id="information-sheet"></iframe>
+            </label>
+          </p>
+          <p><input type="checkbox" id="recording" required>
+            <label for="recording">Ich bin mit der Aufzeichnung meiner Stimme und der Bildschirmansicht zu Analysezwecken einverstanden.</label>
+          </p>
+          <p><input type="checkbox" id="signature" required>
+            <label for="signature">Ich habe die <a onclick="toggleConsent()">Einwilligungserklärung zur Teilnahme an der Nutzerstudie</a> gelesen und akzeptiere diese.
+              <iframe src="docs/consent_form.pdf#toolbar=0" id="consent-form"></iframe>
+            </label>
+          </p>
+          <p><input type="checkbox" id="questions" required>
+            <label for="questions">Es wurde mir die Möglichkeit für Rückfragen angeboten. Mir ist bekannt, dass ich jederzeit Fragen stellen kann.</label>
+          </p>
+          <p><input type="checkbox" id="buy" required>
+            <label for="buy">Ich bestätige, dass kein tatsächlicher Kauf erfolgt und ich keine Ware erhalten werde.</label>
+          </p><br>
+          <p><input type="checkbox" id="agreed" required>
+            <label for="agreed">Ich erfülle alle Teilnahmevoraussetzungen und bin mit der Durchführung der Nutzerstudie einverstanden.</label>
+          </p>
+        </form>
+      </div>
+
+      <div class="center">
+        <input href="shop.php" type="submit" form="form-checklist" class="btn" value="Zum Online-Shop &#8594;">
+      </div>
     </div>
-  </div>
+  </main>
 
   <!-- print message to log when entering online shop -->
   <?php wh_log('entered online shop (first condition: ' . $_SESSION['condition1'] . ')'); ?>
 
   <!-- footer -->
-  <div class="footer">
-    <?php include "includes/footer.php" ?>
-  </div>
+  <?php include "includes/footer.php" ?>
 
   <script>
     <?php include "includes/scripts.js" ?>

@@ -39,16 +39,24 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li p {
+    font-weight: bold;
+}
+
 nav ul li a {
     font-weight: bold;
-    text-decoration: none;
-    color: #000;
+    color: #135B8B;
+}
+
+nav ul li a:hover {
+    color: #103756;
 }
 
 .logo {
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    font-size: 2rem;
 }
 
 .logo a {
@@ -62,7 +70,7 @@ nav ul li a {
 }
 
 a:hover {
-    color: #135B8B;
+    color: #103756;
 }
 
 .container {
@@ -91,7 +99,7 @@ a:hover {
 }
 
 button {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -228,8 +236,14 @@ select:focus {
 }
 
 #source a {
-    color: #000;
-    text-decoration: none;
+    color: #135B8B;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#source a:hover {
+    color: #103756;
 }
 
 p a {
@@ -264,6 +278,16 @@ h1 {
     margin-right: auto;
     width: 300px;
     padding: 50px;
+}
+
+.logo-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.logo-text {
+    display: block;
 }
 
 .center {
@@ -528,11 +552,12 @@ h1 {
     border: none;
     border-radius: .3em;
     font-weight: bold;
-    padding: 5px;
+    padding: .5rem;
 }
 
 #logout:hover {
     background-color: #CC4C4C;
+    cursor: pointer;
 }
 
 .error {

@@ -38,6 +38,7 @@ function deleteCookie() {
     var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
     document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
   }
+  window.location.href = "logout.php";
 }
 // end of adaption
 
@@ -153,7 +154,7 @@ function addItemToCart(title, price, imageSrc) {
 
   var cartRowContents = `
   <div class="cart-item cart-column">
-  <img class=cart-item-image" src="${imageSrc}" width="100" height="100" alt="product">
+  <img class=cart-item-image" src="${imageSrc}" width="100" height="100" alt="">
   <span class="cart-item-title">${title}</span>
   </div>
   <span class="cart-price cart-column">${price}</span>
